@@ -1,0 +1,187 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Связь с администрацией
+      section.inner-wrap.administration--page
+        .container
+          .row
+            .col-lg-12.col-xl-12
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    h2.inner-row-title__title Связь с администрацией
+            .col-xl-12
+              .contact-administration
+                .row
+                  .col-lg-6.mob-margin
+                    .contact-administration__block
+                      a.link-row(href="#")
+                        .link-row__left
+                          img.link-row__img(src="img/vvp.png")
+                          span.link-row__text Интернет-приемная президента
+                        .block-btn__wrap
+                          svg.block-btn__svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                  
+                  .col-lg-6.mob-margin
+                    .contact-administration__block
+                      a.link-row(href="#")
+                        .link-row__left
+                          img.link-row__img(src="img/chief.png")
+                          span.link-row__text Интернет-приемная главы МО г. Новороссийск
+                        .block-btn__wrap
+                          svg.block-btn__svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                            
+                  .col-lg-6.mob-margin
+                    .administration-info                      
+                      .administration-info__block
+                        .administration-info__row
+                          .administration-info__wrap-svg
+                            svg.administration-info__svg
+                              use(xlink:href="img/sprite.svg#tel")
+                          span.administration-info__caption Телефон горячей линии:
+                        a.administration-info__tel(href="tel:+78617646405") +7 (8617) 64-64-05
+
+                      .administration-info__block
+                        .administration-info__row
+                          .administration-info__wrap-svg
+                            svg.administration-info__svg
+                              use(xlink:href="img/sprite.svg#tel")
+                          span.administration-info__caption Телефон горячей линии для сообщений о проявлении фактов коррупции в органах местного самоуправления:
+                        a.administration-info__tel(href="tel:+78617659747") +7 (8617) 65-97-47
+
+                      .administration-info__block
+                        .administration-info__row
+                          .administration-info__wrap-svg
+                            svg.administration-info__svg
+                              use(xlink:href="img/sprite.svg#at")
+                          span.administration-info__caption Адрес для электронных писем:
+                        a.administration-info__mail(href="mailto:novoros@mo.krasnodar.ru") novoros@mo.krasnodar.ru
+                          
+                  
+                  .col-lg-6.mob-margin
+                    .administration-info                      
+                      .administration-info__block
+                        .administration-info__row
+                          .administration-info__wrap-svg
+                            svg.administration-info__svg
+                              use(xlink:href="img/sprite.svg#mail-sm")
+                          span.administration-info__caption Прием корреспонденции (адрес для отправки писем):
+                        span.administration-info__address г. Новороссийск, ул. Советов 18
+
+                      .administration-info__block
+                        .administration-info__row
+                          .administration-info__wrap-svg
+                            svg.administration-info__svg
+                              use(xlink:href="img/sprite.svg#people")
+                          span.administration-info__caption Прием граждан:
+                        span.administration-info__address г. Новороссийск, ул. Советов 18
+                        span.administration-info__text Понедельник, пятница <b>с 14:00 до 18:00</b>
+                        span.administration-info__text Вторник, среда четверг <b>с 09:00 до 13:00</b>
+              
+              
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                                
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

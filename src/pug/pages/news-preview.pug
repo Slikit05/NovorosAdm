@@ -1,0 +1,406 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Новости  
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Главные новости
+      section.inner-wrap          
+        .container
+          .row
+            .col-lg-4.col-xl-3
+              .sidebar
+                .sidebar__row
+                  .categories
+                    .categories__row.categories__row--active
+                      .categories__wrap
+                        span.categories__text Главные новости
+                        .categories__wrap-svg
+                          svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                    .categories__wrapper        
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Новости районов
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Новости подразделений
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Новости Думы
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                  //.inner-row-title.d-none.d-md-block
+                    .row
+                      .col-xl-12
+                        .inner-row-title__container
+                          h2.inner-row-title__title Главные новости
+                .sidebar__row        
+                  .calendar
+                    h2.title Календарь
+                    .calendar__wrapper
+                      .calendar__up(class="nav" id="nav-tab" role="tablist")
+                        a.calendar__link(class="active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true")
+                          svg.calendar__svg
+                            use(xlink:href="img/sprite.svg#date")
+                          span.calendar__text Дата
+                        a.calendar__link(class="" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false")
+                          svg.calendar__svg
+                            use(xlink:href="img/sprite.svg#periods")
+                          span.calendar__text Период
+                      .calendar__down(class="tab-content" id="nav-tabContent")
+                        .calendar__block(class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab")
+                          input.calendar__field(type="text" id="dateSelect" placeholder="Пожалуйста, выберите дату")
+                          div.calendar__datepicker(id="datepicker")
+                        .calendar__block(class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab")
+                          input.calendar__field(type="text" placeholder="Пожалуйста, выберите дату")
+                          div.calendar__datepicker(id="datepicker2") 
+                      button.sidebar__btn
+                        span Отмена
+                .sidebar__row
+                  .topics
+                    h2.title Темы
+                    .topics__wrapper
+                      p.topics__text Если вы хотите найти новость по определенной теме, воспользуйтесь этим фильтром
+                    button.sidebar__btn(type="button" data-toggle="modal" data-target="#modal-topics") 
+                      span Выбрать тему
+            .col-lg-8.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    h2.inner-row-title__title Главные новости
+                    .inner-row-title__row
+                      button.sidebar__btn(type="button" data-toggle="modal" data-target="#modal-calendar") 
+                        span Календарь
+                      button.sidebar__btn(type="button" data-toggle="modal" data-target="#modal-topics") 
+                        span Выбрать тему
+              .wrap-news.wrap-news--change
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img3.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img3.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Общество
+                        a(href="#")  
+                          h4.post-news__caption За прошедшую неделю в Новороссийске водители два раза совершили наезд на несовершеннолетних
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")                      
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img4.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img4.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Общество
+                          a.post-news__categories(href="#") Торговля и услуги
+                        a(href="#")  
+                          h4.post-news__caption Общественный экологический совет при губернаторе Краснодарского края провел выездное заседание в Новороссийске
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")                      
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img5.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img5.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Местное самоуправление
+                        a(href="#")  
+                          h4.post-news__caption 12 марта в ДК «Кубань» прошло совещание по теме выявления раннего детского и семейного неблагополучия на территории Приморского внутригородского района»
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                          span.post-news__yellow-line Центральный район
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")                      
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img4.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img6.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Туризм
+                        a(href="#")  
+                          h4.post-news__caption Администрация Новороссийска планирует в ближайшие пять лет обеспечить Широкую балку современной инфраструктурой
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")                      
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img3.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img3.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Туризм
+                        a(href="#")  
+                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")                      
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img4.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img4.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Общество
+                        a(href="#")  
+                          h4.post-news__caption За прошедшую неделю в Новороссийске водители два раза совершили наезд на несовершеннолетних
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")                      
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img5.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img5.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Общество
+                          a.post-news__categories(href="#") Торговля и услуги
+                        a(href="#")  
+                          h4.post-news__caption Общественный экологический совет при губернаторе Краснодарского края провел выездное заседание в Новороссийске
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")                      
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img4.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img6.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Местное самоуправление
+                        a(href="#")  
+                          h4.post-news__caption 12 марта в ДК «Кубань» прошло совещание по теме выявления раннего детского и семейного неблагополучия на территории Приморского внутригородского района»
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                          span.post-news__yellow-line Центральный район
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")                      
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img3.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img3.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Туризм
+                        a(href="#")  
+                          h4.post-news__caption Администрация Новороссийска планирует в ближайшие пять лет обеспечить Широкую балку современной инфраструктурой
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+                          a.post-news__yellow-line(href="#") Центральный район
+                .wrap-news__block
+                  .post-news
+                    .post-news__flex
+                      a.post-news__up(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")
+                        picture
+                          source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                          source(srcset="img/news-slider-lg-img4.jpg" media="(max-width: 1200px)")
+                          img.post-news__img(src="img/news-slider-img4.jpg")
+                      .post-news__block-text
+                        .post-news__row
+                          a.post-news__categories(href="#") Общество
+                        a(href="#")
+                          h4.post-news__caption За прошедшую неделю в Новороссийске водители два раза совершили наезд на несовершеннолетних
+                        .post-news__down
+                          span.date-news 31 Января 2019 (09:39)
+              .inner-nav
+                .inner-nav__wrapper
+                  .inner-nav__left-block
+                    .inner-nav__block
+                    
+                      .inner-nav__prev
+                        .block-btn
+                          button.block-btn__btn
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                            span.block-btn__text Предыдущая
+                            
+                      input.inner-nav__number(type="text" placeholder="1" maxlength="4") 
+                      
+                      .inner-nav__next
+                        .block-btn
+                          button.block-btn__btn                            
+                            span.block-btn__text Следующая
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                                
+                      span.inner-nav__text из 540
+                    input.inner-nav__field(type="text" placeholder="Введите интересующую Вас страницу")
+                  .inner-nav__right-block
+                    .header-btn
+                      span.header-btn__text Подписаться на новости
+                      svg.header-btn__svg
+                        use(xlink:href="img/sprite.svg#signature")
+            
+            
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                    
+        
+      
+    footer
+      include includes/footer.pug
+      include includes/modal.pug
+
+      
+                     
+                   
+    include includes/script.pug

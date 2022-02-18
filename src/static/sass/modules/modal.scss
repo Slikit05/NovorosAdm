@@ -1,0 +1,269 @@
+.my-modal {
+  &__content {
+    position: relative;
+  }
+
+  &__close {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(50% - 1px);
+      height: 2px;
+      background-color: #053391;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__dialog {
+    margin-top: 230px;
+  }
+
+  &__header {
+    padding: 0;
+    border: none;
+  }
+
+  &__body {
+    padding: 20px 20px 35px;
+  }
+}
+
+.my-modal-topics {
+  .my-modal {
+    &__dialog {
+      max-width: 735px;
+      margin-top: 233px;
+    }
+
+    &__body {
+      padding: 20px 30px 0;
+    }
+  }
+}
+
+.topics-modal {
+  padding-bottom: 19px;
+
+  &__up {
+    padding: 25px 0 32px;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .search-block__text {
+      color: #202432;
+    }
+
+    .search-block__btn {
+      .search-block__text {
+        color: #fff;
+      }
+    }
+
+    .search-block__field {
+      border: 1px solid #D2D3D6;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+
+  &__middle {
+    height: 265px;
+    overflow: auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -15px;
+    height: 100%;
+  }
+
+  &__item {
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 24px;
+  }
+
+  &__check {
+    display: none;
+
+    &:checked + .topics-modal__square {
+      background-color: #053391;
+      border-color: transparent;
+    }
+
+    &:checked + .topics-modal__square::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 14px;
+      background-image: url(../img/check.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: calc(50% - 7px);
+      left: calc(50% - 8px);
+    }
+  }
+
+  &__square {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D2D3D6;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 500;
+    display: block;
+    letter-spacing: -0.3px;
+
+    span {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #919297
+    }
+  }
+
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  &__left-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 -8px;
+    flex-wrap: wrap;
+    padding-right: 16px;
+  }
+
+  &__right-block {
+    align-self: flex-start;
+
+    .sidebar__btn {
+      padding: 10px 16px;
+    }
+  }
+}
+
+.choice {
+  padding: 0 8px;
+  margin-bottom: 16px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: 1px solid #DEDEE0;
+      border-radius: 5px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        border-color: transparent;
+        transform: scale(1.05);
+        background-color: #053391;
+      }
+
+      .choice__text {
+        color: #fff;
+      }
+
+      .choice__close {
+
+        &::before,
+        &::after {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__close {
+    width: 14px;
+    height: 12px;
+    position: relative;
+    margin-left: 12px;
+    cursor: pointer;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(50% - 1px);
+      height: 1px;
+      background-color: #202432;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

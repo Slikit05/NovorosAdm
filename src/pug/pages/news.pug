@@ -1,0 +1,383 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Новости
+      section.inner-row-title
+        .container
+          .row
+            .col-xl-12
+              .inner-row-title__container
+                h2.inner-row-title__title Новости
+      .container
+        .row
+          .col-xl-12
+            .title-row.title-row--change
+              h2.title Главные новости
+              .block-btn
+                button.block-btn__btn
+                  span.block-btn__text Все новости
+                  .block-btn__wrap
+                    svg.block-btn__svg
+                      use(xlink:href="img/sprite.svg#arrow-right")
+            .news.news--change
+              .news__inner
+                .news__row
+                  .row
+                    .col-xl-9.margin-top
+                      a.big-post-news(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")
+                        .big-post-news__wrapper
+                          .big-post-news__left
+                            .big-post-news__wrap
+                              h3.big-post-news__title <span>В фонде развития промышленности Краснодарского края стартовала программа «Приоритет», а также начата работа «Одного окна»</span>
+                            span.date-news 31 Января 2019 (09:39)
+                          .big-post-news__right
+                            picture
+                              source(srcset="img/news-mob-big1.jpg" media="(max-width: 575px)")
+                              img.big-post-news__img(src="img/news-big1.jpg" alt="")
+                    .col-md-6.col-lg-4.col-xl-3.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          picture
+                            source(srcset="img/news-mob-sm1.jpg" media="(max-width: 575px)")
+                            img.post-news__img(src="img/news-sm1.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption Администрация Краснодарского края продолжает проводить приемы граждан по видеосвязи
+                          span.date-news 31 Января 2019 (09:39)
+                    .col-md-6.col-lg-4.col-xl-3.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          picture
+                            source(srcset="img/news-mob-sm2.jpg" media="(max-width: 575px)")
+                            img.post-news__img(src="img/news-sm2.jpg")    
+                        .post-news__block-text
+                          h4.post-news__caption Cоблюдайте правила техники безопасности при обращении со свечами на акции «Бескозырка»!
+                          span.date-news 31 Января 2019 (09:39)
+                    .d-none.d-md-none.col-md-6.col-lg-4.d-lg-block.col-xl-3.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm3.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption Полная программа Всероссийской патриотической акции «Бескозырка»
+                          span.date-news 31 Января 2019 (09:39)
+                    .d-none.d-md-none.col-md-6.col-lg-4.d-lg-none.col-xl-3.d-xl-block.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm4.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption На селекторном совещании с вице-губернатором Краснодарского края Андреем Алексеенко обсудили борьбу с самостроем
+                          span.date-news 31 Января 2019 (09:39)
+                    .d-none.d-md-none.col-md-6.col-lg-4.d-lg-none.col-xl-3.d-xl-block.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm5.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption Ко Дню высадки десанта на Малую землю в Новороссийске появится новое граффити
+                          span.date-news 31 Января 2019 (09:39) 
+                  .news__flex-down        
+                    .block-btn
+                      button.block-btn__btn
+                        span.block-btn__text Все новости
+                        .block-btn__wrap
+                          svg.block-btn__svg
+                            use(xlink:href="img/sprite.svg#arrow-right")        
+
+                .news__row.news__row--change
+                  .row
+                    .col-xl-12
+                      .title-row
+                        h2.title Новости районов
+                        .block-btn
+                          button.block-btn__btn
+                            span.block-btn__text Все новости районов
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                      .row
+                        .col-md-6.col-lg-4.col-xl-4.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              span.post-news__yellow-line приморский район
+                              picture
+                                source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                img.post-news__img(src="img/news-slider-img1.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                              span.date-news 31 Января 2019 (09:39)
+                        .col-md-6.col-lg-4.col-xl-4.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              span.post-news__yellow-line Центральный район
+                              picture
+                                source(srcset="img/news-slider-img2.jpg" media="(max-width: 575px)")
+                                img.post-news__img(src="img/news-slider-img2.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                              span.date-news 31 Января 2019 (09:39)
+                        .d-none.d-md-none.d-lg-block.col-lg-4.col-xl-4.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              span.post-news__yellow-line Южный район
+                              picture
+                                source(srcset="img/news-slider-img7.jpg" media="(max-width: 575px)")
+                                img.post-news__img(src="img/news-slider-img7.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                              span.date-news 31 Января 2019 (09:39)
+                  .news__flex-down        
+                    .block-btn
+                      button.block-btn__btn
+                        span.block-btn__text Все новости районов
+                        .block-btn__wrap
+                          svg.block-btn__svg
+                            use(xlink:href="img/sprite.svg#arrow-right")            
+
+                .news__row.news__row--change
+                  .row
+                    .col-xl-12
+                      .title-row
+                        h2.title Новости подразделений
+                        .block-btn
+                          button.block-btn__btn
+                            span.block-btn__text Все новости подразделений
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                      .row
+                        .col-md-6.col-lg-4.col-xl-4.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              span.post-news__yellow-line приморский район
+                              picture
+                                source(srcset="img/news-slider-img8.jpg" media="(max-width: 575px)")
+                                img.post-news__img(src="img/news-slider-img8.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption Финансовое управление провело совещание с директорами и главными бухгалтерами централизованных бухгалтерий
+                              span.date-news 31 Января 2019 (09:39)
+                        .col-md-6.col-lg-4.col-xl-4.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              span.post-news__yellow-line Центральный район
+                              picture
+                                source(srcset="img/news-slider-img9.jpg" media="(max-width: 575px)")
+                                img.post-news__img(src="img/news-slider-img9.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption Информация о розничных ценах на отдельные виды социально значимых продуктов питания и об оптово-отпускных и розничных ценах на автомобильное топливо в Новороссийске на 13 марта 2019 года
+                              span.date-news 31 Января 2019 (09:39)
+                        .d-none.d-md-none.d-lg-block.col-md-4.col-lg-4.col-xl-4.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              span.post-news__yellow-line Южный район
+                              picture
+                                source(srcset="img/news-slider-img10.jpg" media="(max-width: 575px)")
+                                img.post-news__img(src="img/news-slider-img10.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption О принятии мер к соблюдению санитарного порядка на территории муниципального образования город Новороссийск
+                              span.date-news 31 Января 2019 (09:39)
+                  .news__flex-down        
+                    .block-btn
+                      button.block-btn__btn
+                        span.block-btn__text Все новости подразделений
+                        .block-btn__wrap
+                          svg.block-btn__svg
+                            use(xlink:href="img/sprite.svg#arrow-right")            
+
+                .news__row.news__row--change
+                  .row
+                    .col-xl-12
+                      .title-row
+                        h2.title Новости думы
+                        .block-btn
+                          button.block-btn__btn
+                            span.block-btn__text Все новости подразделений
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                      .row
+                        .col-md-6.col-lg-3.col-xl-3.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              img.post-news__img(src="img/news-slider-img4.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption Владимир Синяговский: Поздравляю с Днём воссоединения Крыма и Севастополя с Россией!
+                              span.date-news 31 Января 2019 (09:39) 
+                        .col-md-6.col-lg-3.col-xl-3.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              img.post-news__img(src="img/news-slider-img5.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption Депутат ЗСК Юлия Пархоменко получила благодарность от многодетных семей
+                              span.date-news 31 Января 2019 (09:39) 
+                        .col-md-6.col-lg-3.col-xl-3.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              img.post-news__img(src="img/news-slider-img6.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption Владимир Синяговский: Законодательная инициатива Министерства сельского хозяйства имеет большое значение для поддержки фермерства и малых крестьянских хозяйств.
+                              span.date-news 31 Января 2019 (09:39) 
+                        .col-md-6.col-lg-3.col-xl-3.margin-top
+                          a.post-news(href="#")
+                            .post-news__up
+                              .arrow-square
+                                svg.arrow-square__svg
+                                  use(xlink:href="img/sprite.svg#arrow-news")
+                              img.post-news__img(src="img/news-slider-img11.jpg")
+                            .post-news__block-text
+                              h4.post-news__caption Владимир Синяговский: Уважаемые, дорогие и милые кубаночки! Примите самые теплые и добрые поздравления с Международным женским днем – 8 Марта!
+                              span.date-news 31 Января 2019 (09:39)    
+                  .news__flex-down        
+                    .block-btn
+                      button.block-btn__btn
+                        span.block-btn__text Все новости думы
+                        .block-btn__wrap
+                          svg.block-btn__svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                    
+        
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

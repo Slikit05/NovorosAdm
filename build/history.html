@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Администрация и Дума города Новороссийска</title>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/normalise.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <section class="up-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="up-row__container">
+                <div class="up-row__wrapper"><a class="up-row__left" href="#">
+                    <svg class="up-row__eye">
+                      <use xlink:href="img/sprite.svg#eye"></use>
+                    </svg><span class="up-row__text">Версия для слабовидящих</span></a>
+                  <div class="up-row__right"><span class="up-row__text">Мы в социальных сетях:</span>
+                    <div class="social">
+                      <ul class="social__list">
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#vk"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#twiter"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#instagram"></use>
+                            </svg></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 no-relative">
+              <div class="header-down__container">
+                <div class="header-down__wrap-up">
+                  <div class="header-down__up">
+                    <div class="container">
+                      <div class="header-down__flex">
+                        <div class="header-down__left"><a href="index.html"><img class="header-down__logo" src="img/logo.png"></a></div>
+                        <div class="my-nav">
+                          <div class="my-close"><span class="my-close__text">закрыть</span>
+                            <div class="my-close__block">
+                              <div class="my-close__line"></div>
+                              <div class="my-close__line"></div>
+                            </div>
+                          </div>
+                          <ul class="my-nav__list">
+                            <li class="my-nav__item">
+                              <div class="my-nav__row"><a class="my-nav__link" href="#">Новости</a><span class="my-nav__link my-nav__link--mob">Новости</span>
+                                <div class="my-nav__wrap-svg">
+                                  <svg class="my-nav__svg-arrow">
+                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="drop-down">
+                                <ul class="drop-down__list">
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">История города</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Официальные символы город</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item drop-down__item--active"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Районы города</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Паспорт города</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Электронный экономический каталог</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Новороссийск в лицах</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Бессмертный полк — Новороссийск</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Гостям города</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Крейсер боевой славы «Михаил Кутузов»</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Отдохнуть за городом</span>
+                                      </div></a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="my-nav__item">
+                              <div class="my-nav__row"><a class="my-nav__link" href="#">О городе</a><span class="my-nav__link my-nav__link--mob">О городе</span>
+                                <div class="my-nav__wrap-svg">
+                                  <svg class="my-nav__svg-arrow">
+                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="drop-down">
+                                <ul class="drop-down__list">
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">История города</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Официальные символы город</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item drop-down__item--active"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Районы города</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Паспорт города    </span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Электронный экономический каталог</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Новороссийск в лицах</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Бессмертный полк — Новороссийск</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Гостям города</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Крейсер боевой славы «Михаил Кутузов»</span>
+                                      </div></a></li>
+                                  <li class="drop-down__item"><a class="drop-down__link" href="#">
+                                      <div class="drop-down__flex">
+                                        <div class="drop-down__wrap-svg">
+                                          <svg class="drop-down__svg">
+                                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                                          </svg>
+                                        </div><span class="drop-down__text">Отдохнуть за городом</span>
+                                      </div></a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="my-nav__item">
+                              <div class="my-nav__row"><a class="my-nav__link" href="#">Горожанам</a><span class="my-nav__link my-nav__link--mob">Горожанам</span>
+                                <div class="my-nav__wrap-svg">
+                                  <svg class="my-nav__svg-arrow">
+                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="my-nav__item">
+                              <div class="my-nav__row"><a class="my-nav__link" href="#">Органы власти</a><span class="my-nav__link my-nav__link--mob">Органы власти</span>
+                                <div class="my-nav__wrap-svg">
+                                  <svg class="my-nav__svg-arrow">
+                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="my-nav__item">
+                              <div class="my-nav__row"><a class="my-nav__link" href="#">Подразделения</a><span class="my-nav__link my-nav__link--mob">Подразделения</span>
+                                <div class="my-nav__wrap-svg">
+                                  <svg class="my-nav__svg-arrow">
+                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="my-nav__item">
+                              <div class="my-nav__row"><a class="my-nav__link" href="#">Документы</a><span class="my-nav__link my-nav__link--mob">Документы</span>
+                                <div class="my-nav__wrap-svg">
+                                  <svg class="my-nav__svg-arrow">
+                                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="header-down__right">     
+                          <div class="burger">
+                            <div class="burger__wrap"><span class="burger__text">меню</span>
+                              <div class="burger__block">
+                                <div class="burger__line"></div>
+                                <div class="burger__line"></div>
+                                <div class="burger__line"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="search-block">               
+                            <form class="search-block__form"><span class="search-block__text">поиск по сайту</span>
+                              <input class="search-block__field" type="search" placeholder="Введите ключевое слово">
+                              <button class="search-block__btn">
+                                <svg class="search-block__svg">
+                                  <use xlink:href="img/sprite.svg#search"></use>
+                                </svg><span class="search-block__text">найти</span>
+                              </button>
+                              <div class="search-block__click"><span class="search-block__text-close"><span>закрыть</span></span></div>
+                            </form>
+                          </div>
+                          <svg class="search-block__svg open-search">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-down__down">
+                  <div class="header-down__left-block"><span class="header-down__sm-text">Официальный сайт администрации и Думы</span>
+                    <h1 class="header-down__title">муниципального образования город-герой Новороссийск</h1>
+                  </div>
+                  <div class="header-down__right-block">
+                    <div class="header-btn"><span class="header-btn__text">Написать в приемную</span>
+                      <svg class="header-btn__svg">
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                      </svg>
+                    </div>
+                    <div class="header-btn"><span class="header-btn__text">Связь с администрацией</span>
+                      <svg class="header-btn__svg">
+                        <use xlink:href="img/sprite.svg#message"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">О городе  </a></li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link--active">История города</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="inner-wrap history-page">
+        <div class="container">
+          <div class="row">   
+            <div class="col-lg-12 col-xl-12">
+              <div class="inner-row-title">
+                <h2 class="inner-row-title__title">История города</h2>
+              </div>
+            </div>
+          </div>
+          <div class="history">
+            <div class="row">   
+              <div class="col-lg-12 col-xl-12">
+                <div class="history__wrapper">
+                  <div class="row">
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">За тысячи лет до Адама</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>В то время, когда в Месопотамии не было и намека на появление древнейшей цивилизации, население, облюбовавшее территорию современного Новороссийска, уже добилось невиданных культурных и экономических высот. Свидетельством тому является раскопанное археологами поселение «Мысхако».</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history1.jpg"><span class="history-post__description">Древние времена</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">У обрыва цивилизации</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>Древним обитателям здешних мест повезло. Хоть и жили они на окраине самой что ни на есть Тмутаракани, но все же удостоились внимания известных в древнем мире людей. Географ Страбон рассказывал о греческой колонии Баты. Птолемей писал о Бате. Другие авторы упоминали Патус, Пагры и Гиерон.</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history2.jpg"><span class="history-post__description">VI в. до н.э.</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">Потерянный след генуэзцев</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>13-м веке берега Цемесской бухты формально находились под властью Золотой Орды. Но обитателей степей мало занимало морское побережье. Иное дело, генуэзские купцы, у которых здесь был особый интерес — совсем рядом проходила северная тропа Великого шелкового пути, следовательно, имелся прямой выход на страны Востока.</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history3.jpg"><span class="history-post__description">13 век</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">Печальная повесть Суджука</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>Стремясь упрочить свое положение на черноморских берегах, турки возводят в 1722 году крепость на берегу Цемесской (османы называли ее Суджукской) бухты. Надпись над крепостными воротами гласила: «Эта новая крепость стала преградой на пути врагов».</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history4.jpg"><span class="history-post__description">1784 - 1829 годы</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">Заложник Восточной войны</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>Тревожным выдался для новороссийцев февраль 1855 года. Шла Крымская война. Русский флот был заперт в Севастополе. На черноморских просторах хозяйничали англо-французские эскадры. Небольшой гарнизон Новороссийского укрепления, вооруженный устаревшими орудиями, был превосходной мишенью.</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history5.jpg"><span class="history-post__description">1855 год</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">Слезы черкешенки</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>«Дайте Кавказу мир и не ищете рая на Евфрате! Он здесь!» — восклицал декабрист А.А.Бестужев-Марлинский. Мир дался Кавказу слишком дорогой ценой. Новороссийску пришлось стать свидетелем лишений и страданий, которые выпали на долю аборигенов здешних мест — адыгов.</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history6.jpg"><span class="history-post__description">1864 год</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">"Серое золото" кавказского Клондайка</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>Но и сегодня он впечатляет надежностью своих оборонительных рубежей: каменных стен и искусственного рва. Столь же поразительна тяга древних «мысхакцев» к прекрасному.</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history7.jpg"><span class="history-post__description">1900 год</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">"Новороссийская республика"</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>Свобода, о которой так долго мечтала передовая часть русского общества, нагрянула внезапно и мощно, опьянив собой не подготовленного к такому повороту событий обывателя. В одночасье рухнули устои размеренной провинциальной жизни. Забастовка стала самым актуальным способом самовыражения и решения злободневных проблем.</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history8.jpg"><span class="history-post__description">1905 год</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">На стройке новой эры</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>Зкончилась эпоха «бури и натиска». И пока Всеволод Мейерхольд зачинал полюбившуюся новороссийцам традицию уличных феерий, местные портовики, цементники, вагоноремонтники героическими усилиями приводили в порядок разрушенное войной хозяйство, налаживали выпуск мирной продукции.</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history9.jpg"><span class="history-post__description">1927 год</span></div></a></div>
+                    <div class="col-md-6 history-post"><a class="history-post__wrapper" href="#">
+                        <div class="history-post__row-title">
+                          <h3 class="history-post__name">С объявлением о сдаче города поторопились</h3>
+                        </div>
+                        <div class="history-post__block-text">
+                          <p>О начале войны новороссийцы узнали из радиосообщений. Но уже 25 июня 1941 года в небе над городом появился первый немецкий самолет-разведчик. А в конце августа начались планомерные налеты вражеской авиации на Новороссийский порт.</p>
+                        </div>
+                        <div class="history-post__wrap-img"><img class="history-post__img" src="img/history10.jpg"><span class="history-post__description">1941 год</span></div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="awards bg-gray">
+          <div class="inner-row-title">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-12">
+                  <h2 class="title">Награды города</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="awards__container">       
+            <div class="container">       
+              <div class="row">
+                <div class="col-md-12 col-lg-4 awards__margin-bottom">
+                  <div class="awards-post">
+                    <div class="awards-post__up"><img class="awards-post__img" src="img/awards1.jpg">
+                      <h4 class="awards-post__caption">Орден Отечественной войны</h4>
+                    </div>
+                    <div class="awards-post__block-text">
+                      <h4 class="awards-post__caption awards-post__caption--mob">Орден Отечественной войны</h4>
+                      <p class="awards-post__text">Город Новороссийск является крупным транспортным узлом и важным торговым портом, имеет исторические заслуги перед Отечеством, награжден 7 мая 1966 года орденом Отечественной войны первой степени.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-4 awards__margin-bottom">
+                  <div class="awards-post">
+                    <div class="awards-post__up"><img class="awards-post__img" src="img/awards2.jpg">
+                      <h4 class="awards-post__caption">Орден Ленина</h4>
+                    </div>
+                    <div class="awards-post__block-text">
+                      <h4 class="awards-post__caption awards-post__caption--mob">Орден Ленина</h4>
+                      <p class="awards-post__text">По Указу Президиума Верховного Совета СССР от 14 сентября 1973 г. удостоен звания «Город-герой», с вручением высших государственных наград ордена Ленина и медали Золотая Звезда.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-4 awards__margin-bottom">
+                  <div class="awards-post">
+                    <div class="awards-post__up"><img class="awards-post__img" src="img/awards3.jpg">
+                      <h4 class="awards-post__caption">Золотая звезда</h4>
+                    </div>
+                    <div class="awards-post__block-text">
+                      <h4 class="awards-post__caption awards-post__caption--mob">Золотая звезда</h4>
+                      <p class="awards-post__text">Дни города отмечается ежегодно 12 сентября — День основания города и 16 сентября День разгрома немецко-фашистских войск у стен Новороссийска в годы Великой Отечественной войны.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="founder">
+          <div class="inner-row-title">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-12">
+                  <h2 class="title">Отцы-основатели</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="founder__container">       
+            <div class="container">       
+              <div class="row">
+                <div class="col-md-6 col-xl-4 founder__bottom">
+                  <div class="founder-post"><img class="founder-post__img" src="img/founder1.jpg"><span class="founder-post__caption">Н. Н. Раевский</span>
+                    <p class="founder-post__text">Сегодня трудно поверить в то, что у исторического проекта с гордым названием «Новороссийск» когда-то имелись серьезные оппоненты. Но так было. Вместо будущего Новороссийского укрепления в планах Главного Морского штаба на 1838 год значилось строительство второго укрепления в Геленджикской бухте. И только убежденность генерала Н.Н.Раевского в том, что следующий форт нужно строить на берегу Суджукской бухты, привела, в конечном счете, к появлению Высочайшего предписания: «Иметь при устье реки Цемес главный порт или пристань для береговой нашей эскадры».</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 founder__bottom">
+                  <div class="founder-post"><img class="founder-post__img" src="img/founder2.jpg"><span class="founder-post__caption">М. П. Лазарев</span>
+                    <p class="founder-post__text">12 (24) сентября в полдень в Суджукскую бухту вошла эскадра кораблей Черноморского флота под командованием вице-адмирала М.П.Лазарева, первооткрывателя Антарктиды и героя знаменитого Наваринского сражения. На берег был высажен армейский десант, ведомый генерал-лейтенантом Н.Н.Раевским, боевая слава которого взошла на полях Отечественной войны 1812 года, когда прапорщику Раевскому едва исполнилось 11 лет, и сводный батальон моряков-черноморцев во главе с капитан-лейтенантом Н.Ф.Метлиным, будущим морским министром. Этот день освящен традицией как День основания Новороссийска.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xl-4 founder__bottom">
+                  <div class="founder-post"><img class="founder-post__img" src="img/founder3.jpg"><span class="founder-post__caption">Л. М. Серебряков</span>
+                    <p class="founder-post__text">Вслед за Раевским и Лазаревым третьим отцом-основателем города по праву признан адмирал Л.М.Серебряков, благодаря неустанным заботам которого Новороссийск был построен и «принял вид красивого города».	</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portal-slider portal-slider--border">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="portal-slider__container">
+                <div class="portal-slider__line swiper-container">
+                  <div class="portal-slider__wrapper swiper-wrapper">
+                    <div class="portal-slider__slide swiper-slide"><a class="portal-slider__wrap" href="#">
+                        <div class="portal-slider__block-text">
+                          <h5 class="portal-slider__title">Правительство РФ</h5>
+                          <div class="portal-slider__row">
+                            <div class="portal-slider__block"><img class="portal-slider__icon" src="img/emblem1.png"><span class="portal-slider__text">goverment.ru</span></div>
+                            <svg class="portal-slider__svg-arrow">
+                              <use xlink:href="img/sprite.svg#arrow-right-sm"></use>
+                            </svg>
+                          </div>
+                        </div></a></div>
+                    <div class="portal-slider__slide swiper-slide"><a class="portal-slider__wrap" href="#">
+                        <div class="portal-slider__block-text">
+                          <h5 class="portal-slider__title">Государственная дума РФ</h5>
+                          <div class="portal-slider__row">
+                            <div class="portal-slider__block"><img class="portal-slider__icon" src="img/emblem2.png"><span class="portal-slider__text">duma.gov.ru</span></div>
+                            <svg class="portal-slider__svg-arrow">
+                              <use xlink:href="img/sprite.svg#arrow-right-sm"></use>
+                            </svg>
+                          </div>
+                        </div></a></div>
+                    <div class="portal-slider__slide swiper-slide"><a class="portal-slider__wrap" href="#">
+                        <div class="portal-slider__block-text">
+                          <h5 class="portal-slider__title">Конституционный Суд РФ</h5>
+                          <div class="portal-slider__row">
+                            <div class="portal-slider__block"><img class="portal-slider__icon" src="img/emblem3.png"><span class="portal-slider__text">ksrf.ru</span></div>
+                            <svg class="portal-slider__svg-arrow">
+                              <use xlink:href="img/sprite.svg#arrow-right-sm"></use>
+                            </svg>
+                          </div>
+                        </div></a></div>
+                    <div class="portal-slider__slide swiper-slide"><a class="portal-slider__wrap" href="#">
+                        <div class="portal-slider__block-text">
+                          <h5 class="portal-slider__title">Администрация Краснодарского края</h5>
+                          <div class="portal-slider__row">
+                            <div class="portal-slider__block"><img class="portal-slider__icon" src="img/emblem4.png"><span class="portal-slider__text">admkrai.krasnodar.ru</span></div>
+                            <svg class="portal-slider__svg-arrow">
+                              <use xlink:href="img/sprite.svg#arrow-right-sm"></use>
+                            </svg>
+                          </div>
+                        </div></a></div>
+                    <div class="portal-slider__slide swiper-slide"><a class="portal-slider__wrap" href="#">
+                        <div class="portal-slider__block-text">
+                          <h5 class="portal-slider__title">ГКУ КК «ГосЮрБюро Краснодарского края»</h5>
+                          <div class="portal-slider__row">
+                            <div class="portal-slider__block"><img class="portal-slider__icon" src="img/emblem5.png"><span class="portal-slider__text">gosurburo93.ru</span></div>
+                            <svg class="portal-slider__svg-arrow">
+                              <use xlink:href="img/sprite.svg#arrow-right-sm"></use>
+                            </svg>
+                          </div>
+                        </div></a></div>
+                    <div class="portal-slider__slide swiper-slide"><a class="portal-slider__wrap" href="#">
+                        <div class="portal-slider__block-text">
+                          <h5 class="portal-slider__title">Правительство РФ</h5>
+                          <div class="portal-slider__row">
+                            <div class="portal-slider__block"><img class="portal-slider__icon" src="img/emblem1.png"><span class="portal-slider__text">goverment.ru</span></div>
+                            <svg class="portal-slider__svg-arrow">
+                              <use xlink:href="img/sprite.svg#arrow-right-sm"></use>
+                            </svg>
+                          </div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="portal-slider__down">
+                  <div class="portal-slider__arrow portal-slider__arrow--prev">
+                    <div class="portal-slider__wrap-svg">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="portal-slider__arrow portal-slider__arrow--next">
+                    <div class="portal-slider__wrap-svg">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#arrow-right">                       </use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="page-footer">
+        <div class="page-footer__up">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="page-footer__block">
+                  <div class="footer-list">
+                    <div class="footer-list__up"><a class="footer-list__caption" href="#">Полезное</a>
+                      <h4 class="footer-list__caption footer-list__caption--mob">Полезное</h4>
+                      <svg class="footer-list__svg-arrow">
+                        <use xlink:href="img/sprite.svg#arrow-down">   </use>
+                      </svg>
+                    </div>
+                    <ul class="footer-list__list">
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">МУП «Водоканал»</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">МБУ «Безопасный город»</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Полезное</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Эвакуация автотранспорта</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Постановления</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Решения городской думы</a></li>
+                    </ul>
+                  </div>
+                  <div class="page-footer__wrap"><a class="page-footer__tel" href="tel:">8 (8617) 646-405</a><span class="page-footer__text-bold">Телефон горячей линии</span>
+                    <div class="social">
+                      <ul class="social__list">
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#vk"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#twiter"></use>
+                            </svg></a></li>
+                        <li class="social__item"><a class="social__link" href="#">
+                            <svg class="social__svg">
+                              <use xlink:href="img/sprite.svg#instagram"></use>
+                            </svg></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="page-footer__block">
+                  <div class="footer-list">
+                    <div class="footer-list__up"><a class="footer-list__caption" href="#">Новости</a>
+                      <h4 class="footer-list__caption footer-list__caption--mob">Новости</h4>
+                      <svg class="footer-list__svg-arrow">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <ul class="footer-list__list">
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Главные новости</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Новости районов</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Новости подразделений</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Новости Думы</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-list">
+                    <div class="footer-list__up"><a class="footer-list__caption" href="#">О городе</a>
+                      <h4 class="footer-list__caption footer-list__caption--mob">О городе</h4>
+                      <svg class="footer-list__svg-arrow">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <ul class="footer-list__list">
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">История города</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Официальные символы города</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Районы города</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Паспорт города</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Электронный экономический каталог</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Новороссийск в лицах</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Бессмертный полк — Новороссийск</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Гостям города</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Крейсер боевой славы «Михаил Кутузов»</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Отдохнуть за городом</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="page-footer__block">
+                  <div class="footer-list">
+                    <div class="footer-list__up"><a class="footer-list__caption" href="#">Горожанам</a>
+                      <h4 class="footer-list__caption footer-list__caption--mob">Горожанам</h4>
+                      <svg class="footer-list__svg-arrow">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <ul class="footer-list__list">
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Пресс-центр</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Избирательные комиссии</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Городская среда</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Управление МВД России по городу Новороссийск</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Центр Занятости населения</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Муниципальные услуги</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Антикоррупция</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Антитеррор</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Антинарко</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Соцзащита разъясняет</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Безопасность дорожного движения</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Градостроительная деятельность</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Школа по охране труда</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Новороссийский Благотворительный Фонд Помощи Больным Детям «Спаси и Сохрани»</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Правовое просвещение</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="offset-sm-0 col-12 offset-md-4 col-md-8 offset-lg-0 col-lg-3 col-xl-3">
+                <div class="page-footer__block page-footer__block--flex">
+                  <div class="footer-list">
+                    <div class="footer-list__up"><a class="footer-list__caption" href="#">Органы власти</a>
+                      <h4 class="footer-list__caption footer-list__caption--mob">Органы власти</h4>
+                      <svg class="footer-list__svg-arrow">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <ul class="footer-list__list">
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Администрация</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Городская дума</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Контрольно-счетная палата</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Общественная палата</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-list">
+                    <div class="footer-list__up"><a class="footer-list__caption" href="#">Подразделения</a>
+                      <h4 class="footer-list__caption footer-list__caption--mob">Подразделения</h4>
+                      <svg class="footer-list__svg-arrow">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <ul class="footer-list__list">
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Управления</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Отделы</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Муниципальные бюджетные и унитарные учреждения</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-list">
+                    <div class="footer-list__up"><a class="footer-list__caption" href="#">Документы</a>
+                      <h4 class="footer-list__caption footer-list__caption--mob">Документы</h4>
+                      <svg class="footer-list__svg-arrow">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </div>
+                    <ul class="footer-list__list">
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Документы администрации</a></li>
+                      <li class="footer-list__item"><a class="footer-list__link" href="#">Документы городской Думы</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="footer-down__wrapper">
+                <div class="row">
+                  <div class="col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-down__block"><span class="footer-down__text">Все материалы сайта доступны по лицензии: </span><a class="footer-down__copyright" href="#">Creative Commons Attribution 3.0</a><span class="footer-down__text">Создание сайта - <a href="#">Very-Good</a></span></div>
+                  </div>
+                  <div class="col-md-8 col-lg-9 col-xl-9">
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 col-xl-4">
+                        <div class="footer-down__item"><a class="footer-down__link" href="#">Избирательные комиссии</a></div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-4">   
+                        <div class="footer-down__item"> <a class="footer-down__link" href="#">Карта сайта</a></div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-4">   
+                        <div class="footer-down__item"><a class="footer-down__link" href="#">Технические сведения</a></div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-4">   
+                        <div class="footer-down__item"> <a class="footer-down__link" href="#">Редакция сайта</a></div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-4">   
+                        <div class="footer-down__item"><a class="footer-down__link" href="#">Старая версия сайта</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--include modal.pug              -->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.datepicker.extension.range.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/modernizr.js"></script>
+    <!--script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")-->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

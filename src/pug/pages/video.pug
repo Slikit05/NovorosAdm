@@ -1,0 +1,191 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Новости  
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главные новости   
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Общественный экологический совет при губернаторе Краснодарского края провел выездное заседание в Новороссийске
+      section.inner-wrap          
+        .container
+          .row              
+            .col-lg-12.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    .news-inner-info.news-inner-info--change
+                      span.date-news 31 Января 2019 (09:39)
+                      span.post-news__yellow-line 34 фото  
+                    h2.inner-row-title__title Общественный экологический совет при губернаторе Краснодарского края провел выездное заседание в Новороссийске
+                    .inner-row-title__down
+                      .share
+                        span.share__text Поделиться: 
+                        .share__wrapper
+                          a.share__link(href="#")
+                            svg.share__svg
+                              use(xlink:href="img/sprite.svg#vk")
+                          a.share__link(href="#")
+                            svg.share__svg
+                              use(xlink:href="img/sprite.svg#facebook")
+                          a.share__link(href="#")
+                            svg.share__svg
+                              use(xlink:href="img/sprite.svg#twiter")
+                        
+                .news-inner__area
+                  .news-video
+                    .news-video__wrapper
+                      img(src="img/video-img.jpg")
+                      .news-video__wrap-play
+                        .news-video__play
+                          svg.news-video__svg
+                            use(xlink:href="img/sprite.svg#play")
+                  
+                  
+                  .inner-nav
+                    .inner-nav__wrapper
+                      .inner-nav__block
+                        .inner-nav__prev
+                          .block-btn.block-btn--change
+                            button.block-btn__btn
+                              .block-btn__wrap
+                                svg.block-btn__svg
+                                  use(xlink:href="img/sprite.svg#arrow-right")
+                              span.block-btn__text Назад к списку
+
+                            
+            .col-lg-12.col-xl-3
+              .over-news
+                h2.title Рекомендуем
+                .over-news__wrapper
+                  .row
+                    .col-12.col-md-6.col-lg-6.col-xl-12
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg.arrow-square__svg--play
+                              use(xlink:href="img/sprite.svg#play-two")
+                          picture
+                            source(srcset="img/news-mob-sm2.jpg" media="(max-width: 575px)")
+                            img.post-news__img(src="img/news-sm2.jpg")
+                          span.post-news__yellow-line 34 фото  
+                        .post-news__block-text
+                          h4.post-news__caption Cоблюдайте правила техники безопасности при обращении со свечами на акции «Бескозырка»!
+                          span.date-news 31 Января 2019 (09:39)
+                    .col-12.col-md-6.col-lg-6.col-xl-12        
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg.arrow-square__svg--play
+                              use(xlink:href="img/sprite.svg#play-two")
+                          picture
+                            source(srcset="img/news-mob-sm1.jpg" media="(max-width: 575px)")
+                            img.post-news__img(src="img/news-sm1.jpg")
+                            span.post-news__yellow-line 34 фото  
+                        .post-news__block-text
+                          h4.post-news__caption Полная программа Всероссийской патриотической акции «Бескозырка»
+                          span.date-news 31 Января 2019 (09:39)
+            
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                    
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

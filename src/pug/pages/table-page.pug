@@ -1,0 +1,335 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Горожанам 
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Безопасность дорожного движения
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Эвакуированный транспорт
+      section.inner-wrap.table-page
+        .container
+          .row    
+            .col-lg-12.col-xl-12
+              .inner-row-title
+                .inner-row-title__up
+                  span.inner-row-title__text-info Актуальность сведений:
+                  span.date-news 27 марта 2019 (10:53)
+                h2.inner-row-title__title Эвакуированный транспорт
+              .form-row.table-page-form
+                form.form-row__form
+                  .form-row__wrapper
+                    .form-row__block
+                      span.form-row__description Марка автомобиля / мотосредства:
+                      .form-row__wrap-select
+                        select.form-row__select#select-one
+                          option Выбрать из списка
+                          option(value="Решение") Решение
+                          option(value="Стандарт") Стандарт
+                          option(value="Стандарт") Стандарт
+                          option(value="Стандарт") Стандарт
+                          option(value="Устав") Устав
+                          option(value="Устав") Устав
+                          option(value="Устав") Устав
+                    label.form-row__block
+                      span.form-row__description Государственный регистрационный номер:
+                      input.form-row__field(type="text" name="key" placeholder="А 000 АА 123")
+                    .form-row__block
+                      span.form-row__description Дата помещения на стоянку:
+                      .form-row__wrap
+                        .form-row__wrap-field.form-row__wrap-field--date
+                          input.form-row__date-field(type="text" name="from" id="fromField" placeholder="ДД.ММ.ГГГГ")
+                          .form-row__svg-wrap.form-row__svg-wrap--date(id="from")
+                            svg
+                              use(xlink:href="img/sprite.svg#periods")
+                    .form-row__down
+                      .header-btn
+                        span.header-btn__text Найти транспорт
+                        svg.header-btn__svg
+                          use(xlink:href="img/sprite.svg#search")
+          .row    
+            .col-lg-12.col-xl-12
+              .table-container
+                .table-sect
+                  table.table-sect__table
+                    tr
+                      th Дата и время погрузки на эвакуатор
+                      th Место погрузки на эвакуатор
+                      th Марка, модель транспортного средства
+                      th Государственный регистрационный номер транспортного средства
+                      th Сведения об организации, осуществившей транспортировку
+                      th Номер эвакуатора
+                      th Место стоянки,куда помещено транспортное средство
+                    tr
+                      td 
+                        span 10.12.2018 (19:48)
+                      td 
+                        span Козлова, 12
+                      td 
+                        span Mercedes
+                      td 
+                        span Н 947 УА 123
+                      td 
+                        span ИП Грачёва
+                      td 
+                        span Н 947 УА 123
+                      td <a href="#">г. Новороссийск, ул. Суворова, 3</a>
+                    tr
+                      td 
+                        span 10.12.2018 (19:04)
+                      td 
+                        span Ленина, 22
+                      td 
+                        span ВАЗ2110
+                      td 
+                        span О 433 ММ 161
+                      td 
+                        span ООО Транс-Строй
+                      td 
+                        span О 433 ММ 161
+                      td <a href="#">г. Новороссийск, ул. Новороссийская, 216</a>
+                    tr
+                      td 
+                        span 09.12.2018 (10:01)
+                      td 
+                        span Ленина, 34
+                      td 
+                        span Nissan
+                      td 
+                        span В 657 УЕ 123
+                      td 
+                        span ИП Грачёва
+                      td 
+                        span В 657 УЕ 123
+                      td <a href="#">г. Новороссийск, ул. Тургенева, 1/5</a>
+                    tr
+                      td 
+                        span 09.12.2018 (19:48)
+                      td 
+                        span Волховская, 23
+                      td 
+                        span Mercedes
+                      td 
+                        span Н 947 УА 123
+                      td 
+                        span ИП Ильин
+                      td 
+                        span Н 947 УА 123
+                      td <a href="#">г. Новороссийск, ул. Суворова, 3</a>
+                    tr
+                      td 
+                        span 10.12.2018 (19:48)
+                      td 
+                        span Козлова, 12
+                      td 
+                        span Mercedes
+                      td 
+                        span Н 947 УА 123
+                      td 
+                        span ИП Грачёва
+                      td 
+                        span Н 947 УА 123
+                      td <a href="#">г. Новороссийск, ул. Суворова, 3</a>
+                    tr
+                      td 
+                        span 10.12.2018 (19:04)
+                      td 
+                        span Ленина, 22
+                      td 
+                        span ВАЗ2110
+                      td 
+                        span О 433 ММ 161
+                      td 
+                        span ООО Транс-Строй
+                      td 
+                        span О 433 ММ 161
+                      td <a href="#">г. Новороссийск, ул. Новороссийская, 216</a>
+                    tr
+                      td 
+                        span 09.12.2018 (10:01)
+                      td 
+                        span Ленина, 34
+                      td 
+                        span Nissan
+                      td 
+                        span В 657 УЕ 123
+                      td 
+                        span ИП Грачёва
+                      td 
+                        span В 657 УЕ 123
+                      td <a href="#">г. Новороссийск, ул. Тургенева, 1/5</a>
+                    tr
+                      td 
+                        span 09.12.2018 (19:48)
+                      td 
+                        span Волховская, 23
+                      td 
+                        span Mercedes
+                      td 
+                        span Н 947 УА 123
+                      td 
+                        span ИП Ильин
+                      td Н 947 УА 123
+                        span 
+                      td <a href="#">г. Новороссийск, ул. Суворова, 3</a>
+                    tr
+                      td 
+                        span 10.12.2018 (19:48)
+                      td 
+                        span Козлова, 12
+                      td 
+                        span Mercedes
+                      td 
+                        span Н 947 УА 123
+                      td 
+                        span ИП Грачёва
+                      td 
+                        span Н 947 УА 123
+                      td <a href="#">г. Новороссийск, ул. Суворова, 3</a>
+                    tr
+                      td 
+                        span 10.12.2018 (19:04)
+                      td 
+                        span Ленина, 22
+                      td 
+                        span ВАЗ2110
+                      td 
+                        span О 433 ММ 161
+                      td 
+                        span ООО Транс-Строй
+                      td 
+                        span О 433 ММ 161
+                      td <a href="#">г. Новороссийск, ул. Новороссийская, 216</a>
+          
+              .inner-nav
+                .inner-nav__wrapper
+                  .inner-nav__left-block
+                    .inner-nav__block
+
+                      .inner-nav__prev
+                        .block-btn
+                          button.block-btn__btn
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                            span.block-btn__text Предыдущая
+
+                      input.inner-nav__number(type="text" placeholder="1")
+
+                      .inner-nav__next
+                        .block-btn
+                          button.block-btn__btn                            
+                            span.block-btn__text Следующая
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+                      span.inner-nav__text из 540
+                    input.inner-nav__field(type="text" placeholder="Введите интересующую Вас страницу")
+              
+              
+                              
+            
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                    
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

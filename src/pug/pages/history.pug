@@ -1,0 +1,271 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") О городе  
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active История города
+      section.inner-wrap.history-page
+        .container
+          .row    
+            .col-lg-12.col-xl-12
+              .inner-row-title
+                h2.inner-row-title__title История города
+          .history
+            .row    
+              .col-lg-12.col-xl-12
+                .history__wrapper
+                  .row
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name За тысячи лет до Адама
+                        .history-post__block-text
+                          p В то время, когда в Месопотамии не было и намека на появление древнейшей цивилизации, население, облюбовавшее территорию современного Новороссийска, уже добилось невиданных культурных и экономических высот. Свидетельством тому является раскопанное археологами поселение «Мысхако».
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history1.jpg")
+                          span.history-post__description Древние времена
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name У обрыва цивилизации
+                        .history-post__block-text
+                          p Древним обитателям здешних мест повезло. Хоть и жили они на окраине самой что ни на есть Тмутаракани, но все же удостоились внимания известных в древнем мире людей. Географ Страбон рассказывал о греческой колонии Баты. Птолемей писал о Бате. Другие авторы упоминали Патус, Пагры и Гиерон.
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history2.jpg")
+                          span.history-post__description VI в. до н.э.
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name Потерянный след генуэзцев
+                        .history-post__block-text
+                          p 13-м веке берега Цемесской бухты формально находились под властью Золотой Орды. Но обитателей степей мало занимало морское побережье. Иное дело, генуэзские купцы, у которых здесь был особый интерес — совсем рядом проходила северная тропа Великого шелкового пути, следовательно, имелся прямой выход на страны Востока.
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history3.jpg")
+                          span.history-post__description 13 век
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name Печальная повесть Суджука
+                        .history-post__block-text
+                          p Стремясь упрочить свое положение на черноморских берегах, турки возводят в 1722 году крепость на берегу Цемесской (османы называли ее Суджукской) бухты. Надпись над крепостными воротами гласила: «Эта новая крепость стала преградой на пути врагов».
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history4.jpg")
+                          span.history-post__description 1784 - 1829 годы
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name Заложник Восточной войны
+                        .history-post__block-text
+                          p Тревожным выдался для новороссийцев февраль 1855 года. Шла Крымская война. Русский флот был заперт в Севастополе. На черноморских просторах хозяйничали англо-французские эскадры. Небольшой гарнизон Новороссийского укрепления, вооруженный устаревшими орудиями, был превосходной мишенью.
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history5.jpg")
+                          span.history-post__description 1855 год
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name Слезы черкешенки
+                        .history-post__block-text
+                          p «Дайте Кавказу мир и не ищете рая на Евфрате! Он здесь!» — восклицал декабрист А.А.Бестужев-Марлинский. Мир дался Кавказу слишком дорогой ценой. Новороссийску пришлось стать свидетелем лишений и страданий, которые выпали на долю аборигенов здешних мест — адыгов.
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history6.jpg")
+                          span.history-post__description 1864 год
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name "Серое золото" кавказского Клондайка
+                        .history-post__block-text
+                          p Но и сегодня он впечатляет надежностью своих оборонительных рубежей: каменных стен и искусственного рва. Столь же поразительна тяга древних «мысхакцев» к прекрасному.
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history7.jpg")
+                          span.history-post__description 1900 год
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name "Новороссийская республика"
+                        .history-post__block-text
+                          p Свобода, о которой так долго мечтала передовая часть русского общества, нагрянула внезапно и мощно, опьянив собой не подготовленного к такому повороту событий обывателя. В одночасье рухнули устои размеренной провинциальной жизни. Забастовка стала самым актуальным способом самовыражения и решения злободневных проблем.
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history8.jpg")
+                          span.history-post__description 1905 год
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name На стройке новой эры
+                        .history-post__block-text
+                          p Зкончилась эпоха «бури и натиска». И пока Всеволод Мейерхольд зачинал полюбившуюся новороссийцам традицию уличных феерий, местные портовики, цементники, вагоноремонтники героическими усилиями приводили в порядок разрушенное войной хозяйство, налаживали выпуск мирной продукции.
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history9.jpg")
+                          span.history-post__description 1927 год
+                    .col-md-6.history-post
+                      a.history-post__wrapper(href="#")
+                        .history-post__row-title
+                          h3.history-post__name С объявлением о сдаче города поторопились
+                        .history-post__block-text
+                          p О начале войны новороссийцы узнали из радиосообщений. Но уже 25 июня 1941 года в небе над городом появился первый немецкий самолет-разведчик. А в конце августа начались планомерные налеты вражеской авиации на Новороссийский порт.
+                        .history-post__wrap-img
+                          img.history-post__img(src="img/history10.jpg")
+                          span.history-post__description 1941 год
+        .awards.bg-gray
+          .inner-row-title
+            .container
+              .row
+                .col-xl-12
+                  h2.title Награды города
+          .awards__container        
+            .container        
+              .row
+                .col-md-12.col-lg-4.awards__margin-bottom
+                  .awards-post
+                    .awards-post__up
+                      img.awards-post__img(src="img/awards1.jpg")
+                      h4.awards-post__caption Орден Отечественной войны
+                    .awards-post__block-text
+                      h4.awards-post__caption.awards-post__caption--mob Орден Отечественной войны
+                      p.awards-post__text Город Новороссийск является крупным транспортным узлом и важным торговым портом, имеет исторические заслуги перед Отечеством, награжден 7 мая 1966 года орденом Отечественной войны первой степени.
+                .col-md-12.col-lg-4.awards__margin-bottom
+                  .awards-post
+                    .awards-post__up
+                      img.awards-post__img(src="img/awards2.jpg")
+                      h4.awards-post__caption Орден Ленина
+                    .awards-post__block-text
+                      h4.awards-post__caption.awards-post__caption--mob Орден Ленина
+                      p.awards-post__text По Указу Президиума Верховного Совета СССР от 14 сентября 1973 г. удостоен звания «Город-герой», с вручением высших государственных наград ордена Ленина и медали Золотая Звезда.
+                .col-md-12.col-lg-4.awards__margin-bottom
+                  .awards-post
+                    .awards-post__up
+                      img.awards-post__img(src="img/awards3.jpg")
+                      h4.awards-post__caption Золотая звезда
+                    .awards-post__block-text
+                      h4.awards-post__caption.awards-post__caption--mob Золотая звезда
+                      p.awards-post__text Дни города отмечается ежегодно 12 сентября — День основания города и 16 сентября День разгрома немецко-фашистских войск у стен Новороссийска в годы Великой Отечественной войны.
+        .founder
+          .inner-row-title
+            .container
+              .row
+                .col-xl-12
+                  h2.title Отцы-основатели
+          .founder__container        
+            .container        
+              .row
+                .col-md-6.col-xl-4.founder__bottom
+                  .founder-post
+                    img.founder-post__img(src="img/founder1.jpg")
+                    span.founder-post__caption Н. Н. Раевский
+                    p.founder-post__text Сегодня трудно поверить в то, что у исторического проекта с гордым названием «Новороссийск» когда-то имелись серьезные оппоненты. Но так было. Вместо будущего Новороссийского укрепления в планах Главного Морского штаба на 1838 год значилось строительство второго укрепления в Геленджикской бухте. И только убежденность генерала Н.Н.Раевского в том, что следующий форт нужно строить на берегу Суджукской бухты, привела, в конечном счете, к появлению Высочайшего предписания: «Иметь при устье реки Цемес главный порт или пристань для береговой нашей эскадры».
+                .col-md-6.col-xl-4.founder__bottom
+                  .founder-post
+                    img.founder-post__img(src="img/founder2.jpg")
+                    span.founder-post__caption М. П. Лазарев
+                    p.founder-post__text 12 (24) сентября в полдень в Суджукскую бухту вошла эскадра кораблей Черноморского флота под командованием вице-адмирала М.П.Лазарева, первооткрывателя Антарктиды и героя знаменитого Наваринского сражения. На берег был высажен армейский десант, ведомый генерал-лейтенантом Н.Н.Раевским, боевая слава которого взошла на полях Отечественной войны 1812 года, когда прапорщику Раевскому едва исполнилось 11 лет, и сводный батальон моряков-черноморцев во главе с капитан-лейтенантом Н.Ф.Метлиным, будущим морским министром. Этот день освящен традицией как День основания Новороссийска.
+                .col-md-6.col-xl-4.founder__bottom
+                  .founder-post
+                    img.founder-post__img(src="img/founder3.jpg")
+                    span.founder-post__caption Л. М. Серебряков
+                    p.founder-post__text Вслед за Раевским и Лазаревым третьим отцом-основателем города по праву признан адмирал Л.М.Серебряков, благодаря неустанным заботам которого Новороссийск был построен и «принял вид красивого города».	
+              
+                              
+            
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                    
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

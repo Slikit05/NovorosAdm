@@ -1,0 +1,387 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Подразделения  
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Управления    
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Управление торговли и потребительского рынка
+      section.inner-wrap.control-inner
+        .container
+          .row
+            .col-lg-4.col-xl-3
+              .sidebar
+                .sidebar__row
+                  .categories
+                    .categories__row.categories__row--active.categories__row--mob
+                      .categories__wrap
+                        span.categories__text Управление торговли и потребительского рынка
+                        .categories__wrap-svg
+                          svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                    .categories__wrapper
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Новости
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text О подразделении
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Структура подразделения
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text График работы подразделения
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Контактная информация
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Нормативно-правовая база
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Нормативно-правовые акты
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Регламенты на предоставление муниципальных услуг
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Конкурсы по предоставлению права на размещение НТО
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Размещение нестационарных торговых объектов на территории муниципального образования город Новороссийск
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Телефоны «горячей линии»
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Ярмарка
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Муниципальный контроль
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Брендирование
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")        
+            .col-lg-8.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    h2.inner-row-title__title Управление торговли и потребительского рынка
+              .row
+                .col-xl-12
+                  .news__row
+                    .row
+                      .col-xl-12
+                        .title-row
+                          h2.title Новости 
+                          .block-btn
+                            button.block-btn__btn
+                              span.block-btn__text Все новости
+                              .block-btn__wrap
+                                svg.block-btn__svg
+                                  use(xlink:href="img/sprite.svg#arrow-right")
+                        .control-inner__container          
+                          .row
+                            .col-md-12.col-lg-12.col-xl-4.margin-botom-mob
+                              a.post-news(href="#").post-news--change
+                                .post-news__flex
+                                  .post-news__up
+                                    .arrow-square
+                                      svg.arrow-square__svg
+                                        use(xlink:href="img/sprite.svg#arrow-news")
+                                    //span.post-news__yellow-line приморский район
+                                    picture
+                                      source(srcset="img/news-slider-img4.jpg" media="(max-width: 575px)")
+                                      img.post-news__img(src="img/news-slider-img4.jpg")
+                                  .post-news__block-text
+                                    h4.post-news__caption Владимир Синяговский: Поздравляю с Днём воссоединения Крыма и Севастополя с Россией!
+                                    span.date-news 31 Января 2019 (09:39)
+                            .col-md-12.col-lg-12.col-xl-4.margin-botom-mob
+                              a.post-news(href="#").post-news--change
+                                .post-news__flex
+                                  .post-news__up
+                                    .arrow-square
+                                      svg.arrow-square__svg
+                                        use(xlink:href="img/sprite.svg#arrow-news")
+                                    //span.post-news__yellow-line Центральный район
+                                    picture
+                                      source(srcset="img/news-slider-img5.jpg" media="(max-width: 575px)")
+                                      img.post-news__img(src="img/news-slider-img5.jpg")
+                                  .post-news__block-text
+                                    h4.post-news__caption Депутат ЗСК Юлия Пархоменко получила благодарность от многодетных семей
+                                    span.date-news 31 Января 2019 (09:39)
+                            .col-md-12.col-lg-12.col-xl-4.margin-botom-mob
+                              a.post-news(href="#").post-news--change
+                                .post-news__flex
+                                  .post-news__up
+                                    .arrow-square
+                                      svg.arrow-square__svg
+                                        use(xlink:href="img/sprite.svg#arrow-news")
+                                    //span.post-news__yellow-line Южный район
+                                    picture
+                                      source(srcset="img/news-slider-img6.jpg" media="(max-width: 575px)")
+                                      img.post-news__img(src="img/news-slider-img6.jpg")
+                                  .post-news__block-text
+                                    h4.post-news__caption Владимир Синяговский: Законодательная инициатива Министерства сельского хозяйства имеет большое значение для поддержки фермерства и малых крестьянских хозяйств.
+                                    span.date-news 31 Января 2019 (09:39)
+                          .news__mob
+                            .row
+                              .col-xl-12
+                                .news__mob-flex
+                                  .block-btn
+                                    button.block-btn__btn
+                                      span.block-btn__text Все новости
+                                      .block-btn__wrap
+                                        svg.block-btn__svg
+                                          use(xlink:href="img/sprite.svg#arrow-right")
+                  .news__row
+                    .row
+                      .col-xl-12
+                        .title-row
+                          h2.title О подразделении
+                        .control-area
+                          img(src="img/control-img.jpg")
+                          p Наряду с этим структурализм абстрактен. Частное - это класс эквивалентности. Представление, в рамках сегодняшних воззрений, рассматривается через интеллект. Можно предположить, что врожденная интуиция, как принято считать, откровенна. Интересно отметить, что конфликт, пренебрегая деталями, нетривиален. Согласно предыдущему, любовь, конечно, творит постмодернизм. Структурализм непредвзято трансформирует типичный смысл жизни, учитывая известные обстоятельства. Закон внешнего мира, следовательно, создает интеллект.
+                        .control-area__flex
+                          .block-btn
+                            button.block-btn__btn
+                              span.block-btn__text Подробнее
+                              .block-btn__wrap
+                                svg.block-btn__svg
+                                  use(xlink:href="img/sprite.svg#arrow-right")
+                  .news__row
+                    .row
+                      .col-xl-12
+                        .title-row
+                          h2.title График работы подразделения
+                        .schedule
+                          .row
+                            .col-md-6.col-lg-12.col-xl-4
+                              span.schedule__text <span>Понедельник</span> — с 9.00 до 18.00
+                              span.schedule__text <span>Вторник</span> — с 9.00 до 18.00
+                              span.schedule__text <span>Среда</span> — с 9.00 до 18.00
+                              span.schedule__text.schedule__text--mob <span>Четверг</span> — с 9.00 до 18.00
+                            .col-md-6.col-lg-12.col-xl-4
+                              span.schedule__text.schedule__text--none <span>Четверг</span> — с 9.00 до 18.00
+                              span.schedule__text <span>Пятница</span> — с 9.00 до 18.00
+                              span.schedule__text <span>Суббота</span> — выходной
+                              span.schedule__text.schedule__text--mob <span>Воскресенье</span> — выходной
+                              span.schedule__text.schedule__text--mob (Перерыв — с 13.00 до 14.00)
+                            .d-none.d-lg-block.col-lg-12.col-xl-4
+                              span.schedule__text <span>Воскресенье</span> — выходной
+                              span.schedule__text (Перерыв — с 13.00 до 14.00)
+                  .news__row
+                    .row
+                      .col-xl-12
+                        .title-row
+                          h2.title Курируемые подразделения
+                        .link-block
+                          .link-block__row
+                            a.link-row(href="#")
+                              span.link-row__text Управление контроля городского хозяйства (УКГХ)
+                              .block-btn__wrap
+                                svg.block-btn__svg
+                                  use(xlink:href="img/sprite.svg#arrow-right")
+                          .link-block__row        
+                            a.link-row(href="#")
+                              span.link-row__text Управление имущественных и земельных отношений
+                              .block-btn__wrap
+                                svg.block-btn__svg
+                                  use(xlink:href="img/sprite.svg#arrow-right")
+                          .link-block__row      
+                            a.link-row(href="#")
+                              span.link-row__text Управление экономического развития
+                              .block-btn__wrap
+                                svg.block-btn__svg
+                                  use(xlink:href="img/sprite.svg#arrow-right")
+                  .row
+                    .col-xl-12
+                      .title-row.change-title
+                        h2.title Контактная информация
+                      .contact-info
+                        .contact-info__wrap
+                          .contact-info__row
+                            .contact-info__wrap-svg
+                              svg.block-connection__svg
+                                use(xlink:href="img/sprite.svg#tel")
+                            span.contact-info__text Телефоны: <b>+7&nbsp;(8617)&nbsp;64-60-77; +7&nbsp;(8617)&nbsp;64-19-32; +7&nbsp;(8617)&nbsp;64-62-21</b>
+                          .contact-info__row
+                            .contact-info__wrap-svg
+                              svg.block-connection__svg
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.contact-info__text E-mail: <span>otdel_vfa@mail.ru</span>
+                          .contact-info__row
+                            .contact-info__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--geo
+                                use(xlink:href="img/sprite.svg#geo")
+                            span.contact-info__text Адрес: <span>353900,</span> г. Новороссийск, ул. Бирюзова, <span>6, 8</span> этаж
+                        .contact-info__wrap
+                          h3.contact-info__caption Центр поддержки предпринимательства
+                          .contact-info__row
+                            .contact-info__wrap-svg
+                              svg.block-connection__svg
+                                use(xlink:href="img/sprite.svg#tel")
+                            span.contact-info__text Телефоны: <b>+7&nbsp;(918)&nbsp;002&nbsp;79-27</b>
+                          .contact-info__row
+                            .contact-info__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--planet
+                                use(xlink:href="img/sprite.svg#planet")
+                            span.contact-info__text Cайт: <span>http://cpp-nvr.ru/</span>
+                        .contact-info__wrap
+                          h3.contact-info__caption Муниципальный Коворкинг центр "Бизнес среда"
+                          .contact-info__row
+                            .contact-info__wrap-svg
+                              svg.block-connection__svg
+                                use(xlink:href="img/sprite.svg#tel")
+                            span.contact-info__text Телефоны: <b>+7&nbsp;(989)&nbsp;775&nbsp;73&nbsp;75</b>
+                          .contact-info__row
+                            .contact-info__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--arrow
+                                use(xlink:href="img/sprite.svg#arrow-right-sm")
+                            span.contact-info__text <span>https://vk.com/biznessreda</span>
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                                
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

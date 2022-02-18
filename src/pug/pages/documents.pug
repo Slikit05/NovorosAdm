@@ -1,0 +1,194 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Документы  
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Документы администрации
+      section.inner-wrap.document-wrapper
+        .container
+          .row
+            .col-lg-4.col-xl-3
+              .sidebar
+                .sidebar__row
+                  .categories
+                    .categories__row.categories__row--active
+                      .categories__wrap
+                        span.categories__text Документы администрации
+                        .categories__wrap-svg
+                          svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                    .categories__wrapper
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Документы городской Думы
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                              
+            .col-lg-8.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    h2.inner-row-title__title Документы администрации
+              .documents      
+                .row
+                  .col-xl-12
+                    .link-block
+                      .link-block__row
+                        a.link-row(href="#")
+                          span.link-row__text Общие документы
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .link-block__row        
+                        a.link-row(href="#")
+                          span.link-row__text Нормативные правовые акты
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .link-block__row      
+                        a.link-row(href="#")
+                          span.link-row__text Публичные слушания
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .link-block__row      
+                        a.link-row(href="#")
+                          span.link-row__text Аукционы, конкурсы и торги
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .link-block__row      
+                        a.link-row(href="#")
+                          span.link-row__text Отчёты об основных итогах экономического и социального развития
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .link-block__row      
+                        a.link-row(href="#")
+                          span.link-row__text Закупки за счет добровольных пожертвований, благотворительной помощи
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .link-block__row      
+                        a.link-row(href="#")
+                          span.link-row__text Капитальный ремонт МКД
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .link-block__row      
+                        a.link-row(href="#")
+                          span.link-row__text Отбор управляющих организаций
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .link-block__row      
+                        a.link-row(href="#")
+                          span.link-row__text Публичное обсуждение проектов муниципальных программ
+                          .block-btn__wrap
+                            svg.block-btn__svg
+                              use(xlink:href="img/sprite.svg#arrow-right")      
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                                
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

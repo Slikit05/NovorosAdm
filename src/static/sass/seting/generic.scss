@@ -1,0 +1,119 @@
+body,
+input,
+textarea,
+button,
+select,
+p,
+a,
+li,
+span,
+cite {
+  font-weight: $mainFontWeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+}
+
+body,
+input,
+textarea,
+button,
+select,
+p,
+a,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+cite,
+sup {
+  font-family: $mainFont;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
+  //  min-height: calc(100vh - 246px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+button {
+  border: none;
+  outline: inherit;
+}
+
+label {
+  margin: 0;
+}
+
+.url-wrap {
+  padding-top: 50px;
+}
+
+.url-link {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+
+  body,
+  input,
+  textarea,
+  button,
+  select,
+  p,
+  a,
+  li,
+  span,
+  cite {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000001;
+  }
+}

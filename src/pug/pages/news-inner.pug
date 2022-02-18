@@ -1,0 +1,307 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Новости  
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главные новости   
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Общественный экологический совет при губернаторе Краснодарского края провел выездное заседание в Новороссийске
+      section.inner-wrap          
+        .container
+          .row              
+            .col-lg-12.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    .news-inner-info.news-inner-info--change
+                      span.date-news 31 Января 2019 (09:39)
+                      a.post-news__categories(href="#") Общество
+                      a.post-news__categories(href="#") Торговля и услуги
+                    h2.inner-row-title__title Общественный экологический совет при губернаторе Краснодарского края провел выездное заседание в Новороссийске
+                    .inner-row-title__down
+                      .share
+                        span.share__text Поделиться: 
+                        .share__wrapper
+                          a.share__link(href="#")
+                            svg.share__svg
+                              use(xlink:href="img/sprite.svg#vk")
+                          a.share__link(href="#")
+                            svg.share__svg
+                              use(xlink:href="img/sprite.svg#facebook")
+                          a.share__link(href="#")
+                            svg.share__svg
+                              use(xlink:href="img/sprite.svg#twiter")
+              .news-inner.news-inner--change
+                .news-inner-slider
+                  .news-inner-slider__left.swiper-container.gallery-top
+                    .news-inner-slider__wrap.swiper-wrapper
+                      .news-inner-slider__slide-lg.swiper-slide
+                        img.news-inner-slider__img-lg(src="img/news-inner-slider-img1.jpg")
+                      .news-inner-slider__slide-lg.swiper-slide
+                        img.news-inner-slider__img-lg(src="img/news-inner-slider-img1.jpg")
+                      .news-inner-slider__slide-lg.swiper-slide
+                        img.news-inner-slider__img-lg(src="img/news-inner-slider-img1.jpg")
+                      .news-inner-slider__slide-lg.swiper-slide
+                        img.news-inner-slider__img-lg(src="img/news-inner-slider-img1.jpg")
+                      .news-inner-slider__slide-lg.swiper-slide
+                        img.news-inner-slider__img-lg(src="img/news-inner-slider-img1.jpg")
+                      .news-inner-slider__slide-lg.swiper-slide
+                        img.news-inner-slider__img-lg(src="img/news-inner-slider-img1.jpg")
+                    .news-inner-slider__nav
+                      .news-inner-slider__arrow.news-inner-slider__arrow--prev
+                        svg.news-inner-slider__svg-arrow
+                          use(xlink:href="img/sprite.svg#arrow-news")
+                      .news-inner-slider__arrow.news-inner-slider__arrow--next
+                        svg.news-inner-slider__svg-arrow
+                          use(xlink:href="img/sprite.svg#arrow-news")
+                  .news-inner-slider__right.swiper-container.gallery-thumbs
+                    .news-inner-slider__column.swiper-wrapper
+                      .news-inner-slider__slide-sm.swiper-slide
+                        img.news-inner-slider__img-sm(src="img/news-inner-slider-sm-img1.jpg")
+                      .news-inner-slider__slide-sm.swiper-slide
+                        img.news-inner-slider__img-sm(src="img/news-inner-slider-sm-img2.jpg")
+                      .news-inner-slider__slide-sm.swiper-slide
+                        img.news-inner-slider__img-sm(src="img/news-inner-slider-sm-img3.jpg")
+                      .news-inner-slider__slide-sm.news-inner-slider__slide-sm--hide.swiper-slide
+                        img.news-inner-slider__img-sm(src="img/news-inner-slider-sm-img1.jpg")
+                      .news-inner-slider__slide-sm.news-inner-slider__slide-sm--hide.swiper-slide
+                        img.news-inner-slider__img-sm(src="img/news-inner-slider-sm-img2.jpg")
+                      .news-inner-slider__slide-sm.news-inner-slider__slide-sm--hide.swiper-slide
+                        img.news-inner-slider__img-sm(src="img/news-inner-slider-sm-img3.jpg")
+                        
+                      .news-inner-slider__slide-sm.news-inner-slider__slide-sm--value
+                        .news-inner-slider__item
+                          img.news-inner-slider__img-sm(src="img/news-inner-slider-sm-img-value.jpg")
+                          .news-inner-slider__number-wrap +
+                            span.news-inner-slider__number
+                        
+                .news-inner__area
+                  p В Новороссийске 14 марта прошло первое выездное заседание Общественного экологического совета при главе администрации (губернаторе) Краснодарского края под председательством вице-губернатора Сергея Болдина, при участии представителей краевых общественных и экологических организаций, контролирующих органов и администрации города.
+                  p Главными вопросами повестки заседания стало обсуждение проблемных вопросов сохранения популяций редких и исчезающих биологических видов растений и животных, занесенных в Красную книгу Российской Федерации и Краснодарского края, а также соблюдения природоохранного законодательства при осуществлении работ по добыче мергеля на хребте Маркотх.
+                  p Для проверки информации, поступавшей от новороссийских общественников и экологов, об уничтожении редких краснокнижных растений на территории, примыкающей к ООПТ «Прилагунье вице-губернатор Сергей Болдин вместе с участниками Общественного экологического совета и представителями администрации города выехали к особо охраняемой природной территории. 
+                  p Как рассказал заместитель главы администрации города Дмитрий Агапов, сохранность и соблюдение всех необходимых природоохранных режимов территории «Прилагунья» находятся на контроле администрации города. Два участка, примыкающие к ООПТ, являются муниципальной собственностью и на данный момент переданы по договору аренды строительной компании для возведения гостиницы в соответствии с правилами землепользования и застройки и Генеральным планом муниципального образования. 
+                  p Антон Попович, руководитель комиссии по охране и изучению природных экосистем Западного Кавказа Краснодарского регионального отделения Русского географического общества, сообщил, что на территории, выделенной под строительство гостиницы, находятся редкие краснокнижные растения, которые в последнее время уничтожаются строительной техникой. Эколог также предложил участки, отведенные под строительство, а также еще один, пока незастроенный, участок присоединить к особо охраняемой территории «Прилагунье» с целью предотвращения уничтожения редчайших видов растений.
+                  blockquote <b>Сергей Болдин отметил:</b> По поводу прилегающей к ООПТ «Прилагунье» территории, которую предлагают присоединить к ООПТ, - общественники подготовили исковое заявление в суд. Юристы администрации края его изучат, дадут соответствующие рекомендации. Нарушений в данный момент со стороны арендатора не выявлено. Разрешение на строительство ему пока не выдавалось, застройщик произвел ограждение своей арендованной территории, провел ряд изыскательских работ. Мы сейчас видели, что техника по территории ездила. Непосредственно за самой территорией «Прилагунья» ведется контроль. В сентябре был совершен наезд техники на территорию ООПТ. Нарушитель был привлечен к административной ответственности. В настоящий момент ведется подготовка участка для строительства, строительные работы не ведутся. Дальше на заседании экологического совета сегодня будем искать ответы на остальные вопросы, обязательно выработаем решение по необходимым мерам для сохранения редких растений, произрастающих на территории «Прилагунья».
+                  p В ходе основной части выездного заседания Общественного экологического совета, проходившего в администрации города, были заслушаны доклады экологов и представителей администрации города. 
+                  h4 Итоги обсуждений
+                  p По итогам обсуждений члены Общественного экологического совета отметили, что сохранение уникальных природных экосистем, популяций редких и исчезающих видов на территории Краснодарского края имеет важное природоохранное значение в целом для России, а также создаёт положительный имидж региону и делает край более привлекательным для развития экотуризма. Территории памятника природы «Суджукская лагуна» и ООПТ местного значения «Прилагунье» испытывают колоссальную антропогенную нагрузку от строящихся в непосредственной близости объектов. 
+                  p Требования экологов прекратить строительные работы и присоединить прилегающие земельные участки к территории «Прилагунья» вызвали горячую дискуссию собравшихся. 
+                  p На сегодняшний день нет стопроцентного понимания наличия краснокнижных растений на арендованных территориях, поэтому решено провести дополнительные исследования. После проведения экспертами под надзором Росприроднадзора и Министерства природных ресурсов Краснодарского края всех необходимых исследований будут сформулированы необходимые рекомендации.
+                  img(src="img/news-inner-img1.jpg")
+                  p Заслушав доклад Татьяны Трибрат, члена Совета Межрегиональной природоохранной и правозащитной общественной организации «Экологическая Вахта по Северному Кавказу», о необходимости усиления контроля за соблюдением природоохранного законодательства при осуществлении работ по добыче мергеля на хребте Маркотх, участники заседания приняли решение рекомендовать Общественной палате Новороссийска провести по этому вопросу «круглый стол» с участием заинтересованных граждан, экологов и представителей компании-природопользователя.
+                  blockquote <b>Завершая заседание, вице-губернатор Сергей Болдин отметил:</b> Сегодня здесь собрались специалисты и эксперты, высказали свои профессиональные мнения. Я думаю, очень рационально и правильно мы приняли решение взять паузу и вынести итоговое заключение по результатам работы экспертов. Министерству природных ресурсов дано поручение дополнительно выйти на территорию и буквально в ближайшие дни посмотреть все-таки, есть ли там редкие и исчезающие растения, изучить ситуацию и подготовить соответствующий отчет. А по второму вопросу отмечу: месторождение разрабатывается уже более 100 лет, и еще будет разрабатываться не меньше. Законодательно предусмотрены проверки этого бизнеса, есть план проверок на год. По данным контролирующих организаций, по объемам добычи полезных ископаемых нарушений нет, по горному отводу – тоже. И в заключение считаю необходимым отметить – практику проведения подобных выездных заседаний экологического совета необходимо продолжать, и проводить их в тех муниципальных образованиях, где возникают экологические проблемы.
+                  p Участники заседания приняли решение рекомендовать Общественной палате Новороссийска провести  «круглый стол» с участием заинтересованных граждан, экологов и представителей компании-природопользователя. 
+                  .news-video
+                    .news-video__wrapper
+                      img(src="img/video-img.jpg")
+                      .news-video__play
+                        svg.news-video__svg
+                          use(xlink:href="img/sprite.svg#play")
+                    .news-video__row
+                      span.news-video__caption Пример названия видеоролика
+                      span.news-video__time Длительность: 00:22:12
+                  p По итогам обсуждений члены Общественного экологического совета отметили, что сохранение уникальных природных экосистем, популяций редких и исчезающих видов на территории Краснодарского края имеет важное природоохранное значение в целом для России, а также создаёт положительный имидж региону и делает край более привлекательным для развития экотуризма. Территории памятника природы «Суджукская лагуна» и ООПТ местного значения «Прилагунье» испытывают колоссальную антропогенную нагрузку от строящихся в непосредственной близости объектов. 
+                  span <b>Пример заголовка маркированного списка: </b>
+                  ul
+                    li На сегодняшний день нет стопроцентного понимания наличия краснокнижных;
+                    li Растений на арендованных территориях, поэтому решено провести дополнительные исследования;
+                    li После проведения экспертами под надзором Росприроднадзора и Министерства природных ресурсов;
+                    li Краснодарского края всех необходимых исследований.
+                  p По итогам обсуждений члены Общественного экологического совета отметили, что сохранение уникальных природных экосистем, популяций редких и исчезающих видов на территории Краснодарского края имеет важное природоохранное значение в целом для России, а также создаёт положительный имидж региону и делает край более привлекательным для развития экотуризма. 
+                  span <b>Пример заголовка нумерованного списка:</b>
+                  ol
+                    li На сегодняшний день нет стопроцентного понимания наличия краснокнижных;
+                    li Растений на арендованных территориях, поэтому решено провести дополнительные исследования;
+                    li После проведения экспертами под надзором Росприроднадзора и Министерства природных ресурсов;
+                    li Краснодарского края всех необходимых исследований.
+                  p В Новороссийске 14 марта прошло первое выездное заседание Общественного экологического совета при главе администрации (губернаторе) Краснодарского края под председательством вице-губернатора Сергея Болдина, при участии представителей краевых общественных и экологических организаций, контролирующих органов и администрации города.
+                  p Главными вопросами повестки заседания стало обсуждение проблемных вопросов сохранения популяций редких и исчезающих биологических видов растений и животных, занесенных в Красную книгу Российской Федерации и Краснодарского края, а также соблюдения природоохранного законодательства при осуществлении работ по добыче мергеля на хребте Маркотх.  
+                .news-inner__down
+                  .share
+                    span.share__text Поделиться: 
+                    .share__wrapper
+                      a.share__link(href="#")
+                        svg.share__svg
+                          use(xlink:href="img/sprite.svg#vk")
+                      a.share__link(href="#")
+                        svg.share__svg
+                          use(xlink:href="img/sprite.svg#facebook")
+                      a.share__link(href="#")
+                        svg.share__svg
+                          use(xlink:href="img/sprite.svg#twiter")
+                  .inner-nav
+                    .inner-nav__wrapper
+                      .inner-nav__block
+                        .inner-nav__prev
+                          .block-btn
+                            button.block-btn__btn
+                              .block-btn__wrap
+                                svg.block-btn__svg
+                                  use(xlink:href="img/sprite.svg#arrow-right")
+                              span.block-btn__text Назад к списку
+
+                      .inner-nav__right-block
+                        .header-btn
+                          span.header-btn__text Подписаться на новости
+                          svg.header-btn__svg
+                            use(xlink:href="img/sprite.svg#signature")
+                            
+            .col-lg-12.col-xl-3
+              .over-news
+                h2.title Рекомендуем
+                .over-news__wrapper
+                  .row
+                    .col-12.col-md-6.col-lg-6.col-xl-12
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          picture
+                            source(srcset="img/news-mob-sm2.jpg" media="(max-width: 575px)")
+                            img.post-news__img(src="img/news-sm2.jpg")    
+                        .post-news__block-text
+                          h4.post-news__caption Cоблюдайте правила техники безопасности при обращении со свечами на акции «Бескозырка»!
+                          span.date-news 31 Января 2019 (09:39)
+                    .col-12.col-md-6.col-lg-6.col-xl-12        
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm3.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption Полная программа Всероссийской патриотической акции «Бескозырка»
+                          span.date-news 31 Января 2019 (09:39)
+                    .col-12.col-md-6.col-lg-6.col-xl-12      
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm4.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption На селекторном совещании с вице-губернатором Краснодарского края Андреем Алексеенко обсудили борьбу с самостроем
+                          span.date-news 31 Января 2019 (09:39)
+                    .col-12.col-md-6.col-lg-6.col-xl-12      
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm5.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption Ко Дню высадки десанта на Малую землю в Новороссийске появится новое граффити
+                          span.date-news 31 Января 2019 (09:39)
+                  .over-news__flex-down        
+                    .block-btn
+                      button.block-btn__btn
+                        span.block-btn__text Рекомендуем
+                        .block-btn__wrap
+                          svg.block-btn__svg
+                            use(xlink:href="img/sprite.svg#arrow-right")        
+            
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                    
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

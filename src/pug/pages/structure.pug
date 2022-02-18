@@ -1,0 +1,304 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Органы власти  
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Администрация     
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Структура администрации
+      section.inner-wrap
+        .container
+          .row
+            .col-lg-4.col-xl-3
+              .sidebar
+                .sidebar__row
+                  .categories
+                    .categories__row.categories__row--active
+                      .categories__wrap
+                        span.categories__text Структура Администрации
+                        .categories__wrap-svg
+                          svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                    .categories__wrapper
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Отчет главы
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Графики Выездных Приёмов
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Резерв управленческих кадров
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text План работы администрации
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Работа муниципальных комиссий
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Муниципальный заказ
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Бюджет
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Вакансии
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Лидеры Новороссийска
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")  
+            .col-lg-8.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    h2.inner-row-title__title Структура Администрации
+              .structure    
+                .row
+                  .col-xl-12
+                    .structure__up
+                      a.structure-post(href="#")
+                        .structure-post__flex
+                          .structure-post__wrap-img
+                            img.structure-post__img(src="img/structure-img1.jpg")
+                          .structure-post__block-text
+                            .structure-post__wrap-up
+                              span.structure-post__name Дяченко Игорь Алексеевич
+                              span.structure-post__position Глава муниципального образования город Новороссийск
+                            span.structure-post__text Является главой муниципального образования город Новороссийск, принимающим решения по вопросам экономической, инвестиционной, финансовой, бюджетной, тарифной, налоговой политики города Новороссийска, земельных и имущественных отношений, а также в области осуществления закупок товаров, работ, услуг для муниципальных нужд.
+                    .structure__wrapper
+                      .row
+                        .col-xl-12
+                          .title-row
+                            h3.title Заместители главы
+                      .row
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img2.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Калинина Светлана Владимировна
+                              span.structure-post__text Первый заместитель главы, курирует вопросы экономики и финансов, управления муниципального заказа
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img3.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Цыбань Виктор Викторович
+                              span.structure-post__text Курирует вопросы правового управления, сельского хозяйства, торговли и потребительского рынка, малого и среднего бизнеса, курортно-туристического кластера
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img4.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Служалый Александр Владимирович
+                              span.structure-post__text Курирует вопросы жилищно-коммунального хозяйства, благоустройства, контроля городского хозяйства и жилищного учета
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img5.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Яменсков Александр Иванович
+                              span.structure-post__text Курирует вопросы ГО и ЧС, взаимодействует с правоохранительными органами
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img6.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Майорова Наталья Владимировна
+                              span.structure-post__text Курирует вопросы социальной сферы
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img7.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Агапов Дмитрий Александрович
+                              span.structure-post__text Курирует вопросы муниципального контроля, перспективного развития, строительства, архитектуры, имущественные и земельные отношения
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img8.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Воронина Татьяна Васильевна
+                              span.structure-post__text Заместитель главы муниципального образования. Курирует вопросы делопроизводства, архива, внутренней политики, организационной работы.
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img9.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Юрин Виктор Петрович
+                              span.structure-post__text Заместитель главы муниципального образования город Новороссийск
+                        .col-sm-6.col-md-6.col-lg-6.col-xl-4.structure-margin
+                          a.structure-post(href="#")
+                            .structure-post__wrap-img
+                              img.structure-post__img(src="img/structure-img10.jpg")
+                            .structure-post__block-text
+                              span.structure-post__name Азизов Евгений Сергеевич
+                              span.structure-post__text Управляющий делами. Курирует вопросы информационных технологий, автохозяйства администрации, социально-производственного подразделения администрации муниципального образования.
+                    .structure__down          
+                      .title-row
+                        h2.title Подразделения
+                      .link-block
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Управления
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Отделы
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Муниципальные бюджетные и унитарные учреждения
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Главы внутригородских районов
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Главы сельских округов
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")        
+                              
+                      
+                    
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                                
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

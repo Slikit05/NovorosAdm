@@ -1,0 +1,892 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.section
+        .container
+          .row
+            .col-xl-12
+              .title-row
+                h2.title Новости
+                .block-btn
+                  button.block-btn__btn
+                    span.block-btn__text Все новости
+                    .block-btn__wrap
+                      svg.block-btn__svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+              .news
+                .news__up
+                  .row
+                    .col-xl-9.margin-top
+                      a.big-post-news(href="#")
+                        .arrow-square
+                          svg.arrow-square__svg
+                            use(xlink:href="img/sprite.svg#arrow-news")
+                        .big-post-news__wrapper
+                          .big-post-news__left
+                            .big-post-news__wrap
+                              h3.big-post-news__title <span>В фонде развития промышленности Краснодарского края стартовала программа «Приоритет», а также начата работа «Одного окна»</span>
+                            span.date-news 31 Января 2019 (09:39)
+                          .big-post-news__right
+                            picture
+                              source(srcset="img/news-mob-big1.jpg" media="(max-width: 575px)")
+                              img.big-post-news__img(src="img/news-big1.jpg" alt="")
+                    .col-md-6.col-lg-4.col-xl-3.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          picture
+                            source(srcset="img/news-mob-sm1.jpg" media="(max-width: 575px)")
+                            img.post-news__img(src="img/news-sm1.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption Администрация Краснодарского края продолжает проводить приемы граждан по видеосвязи
+                          span.date-news 31 Января 2019 (09:39)
+                    .col-md-6.col-lg-4.col-xl-3.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          picture
+                            source(srcset="img/news-mob-sm2.jpg" media="(max-width: 575px)")
+                            img.post-news__img(src="img/news-sm2.jpg")    
+                        .post-news__block-text
+                          h4.post-news__caption Cоблюдайте правила техники безопасности при обращении со свечами на акции «Бескозырка»!
+                          span.date-news 31 Января 2019 (09:39)
+                    .d-none.d-md-none.col-md-6.col-lg-4.d-lg-block.col-xl-3.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm3.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption Полная программа Всероссийской патриотической акции «Бескозырка»
+                          span.date-news 31 Января 2019 (09:39)
+                    .d-none.d-md-none.col-md-6.col-lg-4.d-lg-none.col-xl-3.d-xl-block.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm4.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption На селекторном совещании с вице-губернатором Краснодарского края Андреем Алексеенко обсудили борьбу с самостроем
+                          span.date-news 31 Января 2019 (09:39)
+                    .d-none.d-md-none.col-md-6.col-lg-4.d-lg-none.col-xl-3.d-xl-block.margin-top
+                      a.post-news(href="#")
+                        .post-news__up
+                          .arrow-square
+                            svg.arrow-square__svg
+                              use(xlink:href="img/sprite.svg#arrow-news")
+                          img.post-news__img(src="img/news-sm5.jpg")
+                        .post-news__block-text
+                          h4.post-news__caption Ко Дню высадки десанта на Малую землю в Новороссийске появится новое граффити
+                          span.date-news 31 Января 2019 (09:39)
+                  .news__flex-down        
+                    .block-btn
+                      button.block-btn__btn
+                        span.block-btn__text Все новости
+                        .block-btn__wrap
+                          svg.block-btn__svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                .news__down
+                  .row
+                    .col-xl-8
+                      .news__left
+                        .title-row
+                          h2.title Новости районов
+                        .tab-container
+                          .tab-container__up
+                            .tab-container__nav(class="nav" id="nav-tab" role="tablist")
+                              a.tab-container__link(class="active" id="region-one-nav" data-toggle="tab" href="#region-one-containe" role="tab" aria-controls="region-one-containe" aria-selected="true") 
+                                span Приморский район
+                              a.tab-container__link(class="" id="region-two-nav" data-toggle="tab" href="#region-two-containe" role="tab" aria-controls="region-two-containe" aria-selected="false") 
+                                span Южный район
+                              a.tab-container__link(class="" id="region-three-nav" data-toggle="tab" href="#region-three-containe" role="tab" aria-controls="region-three-containe" aria-selected="false") 
+                                span Восточный район
+                              a.tab-container__link(class="" id="region-four-nav" data-toggle="tab" href="#region-four-containe" role="tab" aria-controls="region-four-containe" aria-selected="false") 
+                                span Новороссийский район
+                              a.tab-container__link(class="" id="region-five-nav" data-toggle="tab" href="#region-five-containe" role="tab" aria-controls="region-five-containe" aria-selected="false") 
+                                span Центральный район
+                          .tab-container__wrapper(class="tab-content" id="nav-tabContent")
+                            .tab-container__block(class="tab-pane fade show active" id="region-one-containe" role="tabpanel" aria-labelledby="region-one-nav")
+                              .slider-news
+                                .slider-news__container.slider-news__container--one.swiper-container
+                                  .slider-news__wrapper.swiper-wrapper
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line приморский район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Приморский район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Приморский район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Приморский район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                .slider-news__down          
+                                  .slider-news__nav
+                                    .slider-news__arrows
+                                      .slider-news__arrow.slider-news__arrow--prev.slider-news__arrow--prev-one
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                      .slider-news__arrow.slider-news__arrow--next.slider-news__arrow--next-one
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                    .slider-news__number.slider-news__number--one
+                                  .block-btn
+                                    button.block-btn__btn
+                                      span.block-btn__text Все новости
+                                      .block-btn__wrap
+                                        svg.block-btn__svg
+                                          use(xlink:href="img/sprite.svg#arrow-right")                                     
+                                        
+                                        
+                            .tab-container__block(class="tab-pane fade" id="region-two-containe" role="tabpanel" aria-labelledby="region-two-nav")
+                              .slider-news
+                                .slider-news__container.slider-news__container--two.swiper-container
+                                  .slider-news__wrapper.swiper-wrapper
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Южный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Южный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Южный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Южный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                .slider-news__down          
+                                  .slider-news__nav
+                                    .slider-news__arrows
+                                      .slider-news__arrow.slider-news__arrow--prev.slider-news__arrow--prev-two
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                      .slider-news__arrow.slider-news__arrow--next.slider-news__arrow--next-two
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                    .slider-news__number.slider-news__number--two
+                                  .block-btn
+                                    button.block-btn__btn
+                                      span.block-btn__text Все новости
+                                      .block-btn__wrap
+                                        svg.block-btn__svg
+                                          use(xlink:href="img/sprite.svg#arrow-right")
+                                        
+                                        
+                            .tab-container__block(class="tab-pane fade" id="region-three-containe" role="tabpanel" aria-labelledby="region-three-nav")
+                              .slider-news
+                                .slider-news__container.slider-news__container--three.swiper-container
+                                  .slider-news__wrapper.swiper-wrapper
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Восточный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Восточный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Восточный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Восточный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                .slider-news__down          
+                                  .slider-news__nav
+                                    .slider-news__arrows
+                                      .slider-news__arrow.slider-news__arrow--prev.slider-news__arrow--prev-three
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                      .slider-news__arrow.slider-news__arrow--next.slider-news__arrow--next-three
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                    .slider-news__number.slider-news__number--three
+                                  .block-btn
+                                    button.block-btn__btn
+                                      span.block-btn__text Все новости
+                                      .block-btn__wrap
+                                        svg.block-btn__svg
+                                          use(xlink:href="img/sprite.svg#arrow-right")
+                                        
+                                        
+                            .tab-container__block(class="tab-pane fade" id="region-four-containe" role="tabpanel" aria-labelledby="region-four-nav")
+                              .slider-news
+                                .slider-news__container.slider-news__container--four.swiper-container
+                                  .slider-news__wrapper.swiper-wrapper
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Новороссийский район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Новороссийский район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Новороссийский район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Новороссийский район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                .slider-news__down          
+                                  .slider-news__nav
+                                    .slider-news__arrows
+                                      .slider-news__arrow.slider-news__arrow--prev.slider-news__arrow--prev-four
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                      .slider-news__arrow.slider-news__arrow--next.slider-news__arrow--next-four
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                    .slider-news__number.slider-news__number--four
+                                  .block-btn
+                                    button.block-btn__btn
+                                      span.block-btn__text Все новости
+                                      .block-btn__wrap
+                                        svg.block-btn__svg
+                                          use(xlink:href="img/sprite.svg#arrow-right")
+                                        
+                                        
+                            .tab-container__block(class="tab-pane fade" id="region-five-containe" role="tabpanel" aria-labelledby="region-five-nav")
+                              .slider-news
+                                .slider-news__container.slider-news__container--five.swiper-container
+                                  .slider-news__wrapper.swiper-wrapper
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Центральный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Центральный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Центральный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption Водитель грузовика, допустивший загрязнение проезда, привлечен к административной ответственности
+                                          span.date-news 31 Января 2019 (09:39)
+                                    .slider-news__slide.swiper-slide
+                                      a.post-news(href="#")
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line Центральный район
+                                          picture
+                                            source(srcset="img/news-slider-mob-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/news-slider-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption О повышении тарифов на вывоз ТКО в II полугодии 2019 года	
+                                          span.date-news 31 Января 2019 (09:39)
+                                .slider-news__down          
+                                  .slider-news__nav
+                                    .slider-news__arrows
+                                      .slider-news__arrow.slider-news__arrow--prev.slider-news__arrow--prev-five
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                      .slider-news__arrow.slider-news__arrow--next.slider-news__arrow--next-five
+                                        .slider-news__wrap-svg
+                                          svg.slider-news__svg-arrow
+                                            use(xlink:href="img/sprite.svg#arrow-right")
+                                    .slider-news__number.slider-news__number--five
+                                  .block-btn
+                                    button.block-btn__btn
+                                      span.block-btn__text Все новости
+                                      .block-btn__wrap
+                                        svg.block-btn__svg
+                                          use(xlink:href="img/sprite.svg#arrow-right")
+                                    
+                                    
+                    .col-xl-4                      
+                      .title-row
+                        h2.title Анонсы
+                      .news__right
+                        .row
+                          .col-md-6.col-lg-6.col-xl-12
+                            a.sm-post(href="#")
+                              .sm-post__wrapper
+                                .sm-post__up
+                                  img.sm-post__img(src="img/sm-post-img1.jpg")
+                                .sm-post__block-text
+                                  h5.sm-post__caption Забег «Трезвый я – трезвая Россия!»
+                                  span.date-news 31 Января 2019 (09:39)
+                          .col-md-6.col-lg-6.col-xl-12        
+                            a.sm-post(href="#")
+                              .sm-post__wrapper
+                                .sm-post__up
+                                  img.sm-post__img(src="img/sm-post-img2.jpg")
+                                .sm-post__block-text
+                                  h5.sm-post__caption «Объёмные снежинки из бумаги» - дизайнерский мастер-класс!
+                                  span.date-news 31 Января 2019 (09:39)
+                          .col-md-6.col-lg-6.col-xl-12        
+                            a.sm-post(href="#")
+                              .sm-post__wrapper
+                                .sm-post__up
+                                  img.sm-post__img(src="img/sm-post-img3.jpg")
+                                .sm-post__block-text
+                                  h5.sm-post__caption Граффити нашего города
+                                  span.date-news 31 Января 2019 (09:39)
+                          .col-md-6.col-lg-6.col-xl-12        
+                            a.sm-post(href="#")
+                              .sm-post__wrapper
+                                .sm-post__up
+                                  img.sm-post__img(src="img/sm-post-img4.jpg")
+                                .sm-post__block-text
+                                  h5.sm-post__caption Программа «Приоритет» - начата работа одного окна!
+                                  span.date-news 31 Января 2019 (09:39)
+                        .block-btn
+                          button.block-btn__btn
+                            span.block-btn__text Все анонсы
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+      section.section.useful
+        .bg-gray
+          .container
+            .row
+              .col-xl-12
+                .title-row
+                  h2.title Полезное
+                .useful__wrapper
+                  .row
+                    .col-md-6.col-lg-4.col-xl-3.margin-botom
+                      a.info-post(href="#")
+                        .info-post__wrapper
+                          .info-post__wrap-svg
+                            svg.info-post__svg(width="68" height="68")
+                              use(xlink:href="img/sprite.svg#myp")
+                          span.info-post__caption МУП «Водоканал»
+                    .col-md-6.col-lg-4.col-xl-3.margin-botom
+                      a.info-post(href="#")
+                        .info-post__wrapper
+                          .info-post__wrap-svg
+                            svg.info-post__svg(width="44" height="68")
+                              use(xlink:href="img/sprite.svg#mby")
+                          span.info-post__caption МБУ «Безопасный город»
+                    .col-md-6.col-lg-4.col-xl-3.margin-botom
+                      a.info-post(href="#")
+                        .info-post__wrapper
+                          .info-post__wrap-svg
+                            svg.info-post__svg(width="44" height="68")
+                              use(xlink:href="img/sprite.svg#management-architecture")
+                          span.info-post__caption Управление архитектуры и градостроительства
+                    .col-md-6.col-lg-4.col-xl-3.margin-botom
+                      a.info-post(href="#")
+                        .info-post__wrapper
+                          .info-post__wrap-svg
+                            svg.info-post__svg(width="68" height="68")
+                              use(xlink:href="img/sprite.svg#property-management")
+                          span.info-post__caption Управление имущественных и земельных отношений
+                    .col-md-6.col-lg-4.col-xl-3.margin-botom
+                      a.info-post(href="#")
+                        .info-post__wrapper
+                          .info-post__wrap-svg
+                            svg.info-post__svg(width="58" height="54")
+                              use(xlink:href="img/sprite.svg#memo")
+                          span.info-post__caption Памятка населению на случай ГО ЧС
+                    .col-md-6.col-lg-4.col-xl-3.margin-botom
+                      a.info-post(href="#")
+                        .info-post__wrapper
+                          .info-post__wrap-svg
+                            svg.info-post__svg(width="68" height="68")
+                              use(xlink:href="img/sprite.svg#jobs")
+                          span.info-post__caption Вакансии
+                    .col-md-6.col-lg-4.col-xl-3.margin-botom
+                      a.info-post(href="#")
+                        .info-post__wrapper
+                          .info-post__wrap-svg
+                            svg.info-post__svg(width="60" height="60")
+                              use(xlink:href="img/sprite.svg#areas")
+                          span.info-post__caption Внутригородские районы
+                    .col-md-6.col-lg-4.col-xl-3.margin-botom
+                      a.info-post(href="#")
+                        .info-post__wrapper
+                          .info-post__wrap-svg
+                            svg.info-post__svg(width="48" height="68")
+                              use(xlink:href="img/sprite.svg#evacuation")
+                          span.info-post__caption эвакуация автотранспорта
+                  .row
+                    .col-6.col-md-4.col-lg-2.col-xl-2.mob-margin-bottom
+                      a.sm-info-post(href="#")
+                        .sm-info-post__wrap-svg
+                          svg.sm-info-post__svg()
+                            use(xlink:href="img/sprite.svg#documents")
+                        .sm-info-post__block-text
+                          span.sm-info-post__caption Общие<br> документы
+                    .col-6.col-md-4.col-lg-2.col-xl-2.mob-margin-bottom
+                      a.sm-info-post(href="#")
+                        .sm-info-post__wrap-svg
+                          svg.sm-info-post__svg()
+                            use(xlink:href="img/sprite.svg#standards")
+                        .sm-info-post__block-text
+                          span.sm-info-post__caption Нормативно - правовые акты
+                    .col-6.col-md-4.col-lg-2.col-xl-2.mob-margin-bottom
+                      a.sm-info-post(href="#")
+                        .sm-info-post__wrap-svg
+                          svg.sm-info-post__svg()
+                            use(xlink:href="img/sprite.svg#regulations")
+                        .sm-info-post__block-text
+                          span.sm-info-post__caption Постановления
+                    .col-6.col-md-4.col-lg-2.col-xl-2.mob-margin-bottom
+                      a.sm-info-post(href="#")
+                        .sm-info-post__wrap-svg
+                          svg.sm-info-post__svg()
+                            use(xlink:href="img/sprite.svg#hearings")
+                        .sm-info-post__block-text
+                          span.sm-info-post__caption Публичные<br> слушания
+                    .col-6.col-md-4.col-lg-2.col-xl-2.mob-margin-bottom
+                      a.sm-info-post(href="#")
+                        .sm-info-post__wrap-svg
+                          svg.sm-info-post__svg()
+                            use(xlink:href="img/sprite.svg#solutions")
+                        .sm-info-post__block-text
+                          span.sm-info-post__caption Решения<br> городской думы
+                    .col-6.col-md-4.col-lg-2.col-xl-2.mob-margin-bottom
+                      a.sm-info-post(href="#")
+                        .sm-info-post__wrap-svg
+                          svg.sm-info-post__svg(width="34")
+                            use(xlink:href="img/sprite.svg#auctions")
+                        .sm-info-post__block-text
+                          span.sm-info-post__caption Аукционы, конкурсы, торги
+        .slider-posts
+          .container
+              .row
+                .col-xl-12
+                  .slider-posts__container.swiper-container
+                    .slider-posts__wrapper.swiper-wrapper
+                      .slider-posts__slide.swiper-slide
+                        a.slide-post(href="#")
+                          .slide-post__wrapper
+                            .slide-post__block-text
+                              h3.slide-post__title <span>Всероссийский конкурс "Успех и безопасность"</span>
+                            picture
+                             source(srcset="img/slider-posts-mobsm-img1.jpg" media="(max-width: 575px)")
+                             source(srcset="img/slider-posts-mob-img1.jpg" media="(max-width: 991px)")
+                             img.slide-post__img(src="img/slider-posts-img1.jpg" alt="")
+                      .slider-posts__slide.swiper-slide
+                        a.slide-post(href="#")
+                          .slide-post__wrapper
+                            .slide-post__block-text
+                              h3.slide-post__title <span>Инвестиционный портал муниципального образования город - герой Новороссийск</span>
+                            picture
+                             source(srcset="img/slider-posts-mobsm-img1.jpg" media="(max-width: 575px)")
+                             source(srcset="img/slider-posts-mob-img1.jpg" media="(max-width: 991px)")
+                             img.slide-post__img(src="img/slider-posts-img2.jpg" alt="")
+                      .slider-posts__slide.swiper-slide
+                        a.slide-post(href="#")
+                          .slide-post__wrapper
+                            .slide-post__block-text
+                              h3.slide-post__title <span>Всероссийский конкурс "Успех и безопасность"</span>
+                            picture
+                             source(srcset="img/slider-posts-mobsm-img1.jpg" media="(max-width: 575px)")
+                             source(srcset="img/slider-posts-mob-img1.jpg" media="(max-width: 991px)")
+                             img.slide-post__img(src="img/slider-posts-img1.jpg" alt="")
+                      .slider-posts__slide.swiper-slide
+                        a.slide-post(href="#")
+                          .slide-post__wrapper
+                            .slide-post__block-text
+                              h3.slide-post__title <span>Инвестиционный портал муниципального образования город - герой Новороссийск</span>
+                            picture
+                             source(srcset="img/slider-posts-mobsm-img1.jpg" media="(max-width: 575px)")
+                             source(srcset="img/slider-posts-mob-img1.jpg" media="(max-width: 991px)")
+                             img.slide-post__img(src="img/slider-posts-img2.jpg" alt="")
+                  .slider-posts__down
+                    .slider-posts__arrows
+                      .slider-posts__arrow.slider-posts__arrow--prev
+                        .slider-posts__wrap-svg
+                          svg.slider-posts__svg-arrow
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                      .slider-posts__arrow.slider-posts__arrow--next
+                        .slider-posts__wrap-svg
+                          svg.slider-posts__svg-arrow
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                    .slider-posts__number
+            
+            
+      section.tabs-sect(style="background-image: url(img/tabs-sect-img1.jpg)")
+        .tabs-sect__row
+          .container
+            .row
+              .col-xl-12
+                .tabs-sect__wrap-title
+                  h2.tabs-sect__title 180 лет со дня основания Новороссийска
+          .tabs-sect__wrapper
+            .container
+              .row
+                .col-6.col-md-4.col-lg-2.col-xl-2.tabs-sect__no-relative.mob-margin-top.tabs-sect__wrap
+                  .tabs-sect-nav
+                    a.tabs-sect-nav__link(href="#")
+                      .tabs-sect-nav__wrap-img
+                        svg.tabs-sect-nav__svg(height="35")
+                          use(xlink:href="img/sprite.svg#hotels")
+                      .tabs-sect-nav__block
+                        span.tabs-sect-nav__caption Гостиницы
+                    .tabs-sect__block(style="background-image: url(img/tabs-sect-img2.jpg)")
+                      .container
+                        .row
+                          .col-xl-12
+                            h2.tabs-sect__title Гостиницы
+                            p.tabs-sect__text Более 140 лет назад в апреле 1876 года состоялась закладка городского сада Новороссийска. Открывал сад лично начальник Черноморского округа Б.М. Шелковников. 
+                .col-6.col-md-4.col-lg-2.col-xl-2.tabs-sect__no-relative.mob-margin-top.tabs-sect__wrap
+                  .tabs-sect-nav
+                    a.tabs-sect-nav__link(href="#")
+                      .tabs-sect-nav__wrap-img
+                        svg.tabs-sect-nav__svg(height="30")
+                          use(xlink:href="img/sprite.svg#complexes")
+                      .tabs-sect-nav__block
+                        span.tabs-sect-nav__caption Санаторно - курортные комплексы
+                    .tabs-sect__block(style="background-image: url(img/tabs-sect-img2.jpg)")
+                      .container
+                        .row
+                          .col-xl-12
+                            h2.tabs-sect__title Санаторно - курортные комплексы
+                            p.tabs-sect__text Более 140 лет назад в апреле 1876 года состоялась закладка городского сада Новороссийска. Открывал сад лично начальник Черноморского округа Б.М. Шелковников. 
+                .col-6.col-md-4.col-lg-2.col-xl-2.tabs-sect__no-relative.mob-margin-top.tabs-sect__wrap
+                  .tabs-sect-nav
+                    a.tabs-sect-nav__link(href="#")
+                      .tabs-sect-nav__wrap-img
+                        svg.tabs-sect-nav__svg(height="36")
+                          use(xlink:href="img/sprite.svg#health-care")
+                      .tabs-sect-nav__block
+                        span.tabs-sect-nav__caption Учреждения здравохране&shy;ния
+                    .tabs-sect__block(style="background-image: url(img/tabs-sect-img2.jpg)")
+                      .container
+                        .row
+                          .col-xl-12
+                            h2.tabs-sect__title Учреждения здравохранения
+                            p.tabs-sect__text Более 140 лет назад в апреле 1876 года состоялась закладка городского сада Новороссийска. Открывал сад лично начальник Черноморского округа Б.М. Шелковников. 
+                .col-6.col-md-4.col-lg-2.col-xl-2.tabs-sect__no-relative.mob-margin-top.tabs-sect__wrap
+                  .tabs-sect-nav
+                    a.tabs-sect-nav__link(href="#")
+                      .tabs-sect-nav__wrap-img
+                        svg.tabs-sect-nav__svg(height="35")
+                          use(xlink:href="img/sprite.svg#exhibition")
+                      .tabs-sect-nav__block
+                        span.tabs-sect-nav__caption Выставки
+                    .tabs-sect__block(style="background-image: url(img/tabs-sect-img2.jpg)")
+                      .container
+                        .row
+                          .col-xl-12
+                            h2.tabs-sect__title Выставки
+                            p.tabs-sect__text Более 140 лет назад в апреле 1876 года состоялась закладка городского сада Новороссийска. Открывал сад лично начальник Черноморского округа Б.М. Шелковников. 
+                .col-6.col-md-4.col-lg-2.col-xl-2.tabs-sect__no-relative.mob-margin-top.tabs-sect__wrap
+                  .tabs-sect-nav
+                    a.tabs-sect-nav__link(href="#")
+                      .tabs-sect-nav__wrap-img
+                        svg.tabs-sect-nav__svg(height="35")
+                          use(xlink:href="img/sprite.svg#parks")
+                      .tabs-sect-nav__block
+                        span.tabs-sect-nav__caption Парки
+                    .tabs-sect__block(style="background-image: url(img/tabs-sect-img2.jpg)")
+                      .container
+                        .row
+                          .col-xl-12
+                            h2.tabs-sect__title Парки
+                            p.tabs-sect__text Более 140 лет назад в апреле 1876 года состоялась закладка городского сада Новороссийска. Открывал сад лично начальник Черноморского округа Б.М. Шелковников. 
+                .col-6.col-md-4.col-lg-2.col-xl-2.tabs-sect__no-relative.mob-margin-top.tabs-sect__wrap
+                  .tabs-sect-nav
+                    a.tabs-sect-nav__link(href="#")
+                      .tabs-sect-nav__wrap-img
+                        svg.tabs-sect-nav__svg(height="39")
+                          use(xlink:href="img/sprite.svg#theaters")
+                      .tabs-sect-nav__block
+                        span.tabs-sect-nav__caption Театры
+                    .tabs-sect__block(style="background-image: url(img/tabs-sect-img2.jpg)")
+                      .container
+                        .row
+                          .col-xl-12
+                            h2.tabs-sect__title Театры
+                            p.tabs-sect__text Более 140 лет назад в апреле 1876 года состоялась закладка городского сада Новороссийска. Открывал сад лично начальник Черноморского округа Б.М. Шелковников.
+                            
+            
+                    
+                    
+      section.portal-slider
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+        
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

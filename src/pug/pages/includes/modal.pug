@@ -1,0 +1,126 @@
+div(class="modal my-modal my-modal-topics fade" id="modal-topics" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+  div(class="modal-dialog my-modal__dialog modal-dialog-centered" role="document")
+    div.modal-content.my-modal__content
+      div.modal-header.my-modal__header
+        div(class="my-modal__close" data-dismiss="modal" aria-label="Close")
+      div.my-modal__body
+        .topics-modal
+          h2.title Выбор темы
+          .topics-modal__up
+            form.topics-modal__form
+              .topics-modal__flex
+                span.search-block__text поиск темы
+                .topics-modal__right
+                  input.search-block__field(type="search" placeholder="Введите тему")
+                  button.search-block__btn
+                    svg.search-block__svg
+                      use(xlink:href="img/sprite.svg#search")
+                    span.search-block__text найти
+          .topics-modal__middle          
+            .topics-modal__wrapper
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Название темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Название темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Пример названия темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Пример названия темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Название темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Название темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Пример названия темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Пример названия темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Название темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Название темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Пример названия темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Пример названия темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Название темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Название темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Пример названия темы <span>(162)</span>
+              label.topics-modal__item
+                input.topics-modal__check(type="checkbox")
+                .topics-modal__square
+                span.topics-modal__text Пример названия темы <span>(162)</span>
+          .topics-modal__down
+            .topics-modal__left-block
+              .choice
+                .choice__wrap
+                  span.choice__text Название темы
+                  .choice__close
+              .choice
+                .choice__wrap
+                  span.choice__text Название темы
+                  .choice__close
+            .topics-modal__right-block
+              button.sidebar__btn 
+                span Показать
+        
+                    
+div(class="modal my-modal my-modal-calendar fade" id="modal-calendar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+  div(class="modal-dialog my-modal__dialog my-modal__dialog--map modal-dialog-centered" role="document")
+    div.modal-content.my-modal__content
+      div.modal-header.my-modal__header
+        div(class="my-modal__close" data-dismiss="modal" aria-label="Close")
+      div.my-modal__body
+        .calendar
+          h2.title Календарь
+          .calendar__wrapper
+            .calendar__up(class="nav" id="nav-tab" role="tablist")
+              a.calendar__link(class="active" id="modal-nav-one" data-toggle="tab" href="#modal-tab-one" role="tab" aria-controls="modal-tab-one" aria-selected="true")
+                svg.calendar__svg
+                  use(xlink:href="img/sprite.svg#date")
+                span.calendar__text Дата
+              a.calendar__link(class="" id="modal-nav-two" data-toggle="tab" href="#modal-tab-two" role="tab" aria-controls="modal-tab-two" aria-selected="false")
+                svg.calendar__svg
+                  use(xlink:href="img/sprite.svg#periods")
+                span.calendar__text Период
+            .calendar__down(class="tab-content" id="nav-tabContent")
+              .calendar__block(class="tab-pane fade show active" id="modal-tab-one" role="tabpanel" aria-labelledby="modal-nav-one")
+                input.calendar__field(type="text" id="dateSelect2" placeholder="Пожалуйста, выберите дату")
+                div.calendar__datepicker(id="datepicker3")
+              .calendar__block(class="tab-pane fade" id="modal-tab-two" role="tabpanel" aria-labelledby="modal-nav-two")
+                input.calendar__field(type="text" placeholder="Пожалуйста, выберите дату")
+                div.calendar__datepicker(id="datepicker4")
+            button.sidebar__btn 
+              span Отмена

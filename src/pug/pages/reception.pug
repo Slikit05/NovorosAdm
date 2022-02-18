@@ -1,0 +1,218 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Связь с администрацией
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Приемная главы МО г. Новороссийск
+      section.inner-wrap.reception-page
+        .container
+          .row    
+            .col-lg-12.col-xl-12
+              .inner-row-title
+                h2.inner-row-title__title Приемная главы МО г. Новороссийск
+              .form-page
+                .row.justify-content-center
+                  .col-lg-8
+                    form.form-page__form(id="myForm" method="post" action="")
+                      .form-page__block                      
+                        label.form-page__row
+                          span.form-page__caption Фамилия<span>*</span>:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="lname")
+                            
+                        label.form-page__row
+                          span.form-page__caption Имя<span>*</span>:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="fname")
+                            
+                        label.form-page__row
+                          span.form-page__caption Отчество:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="mname")
+                            
+                        label.form-page__row
+                          span.form-page__caption Телефон<span>*</span>:
+                          .form-page__wrap-field
+                            input.form-page__field(type="tel" name="tel")
+                            
+                        label.form-page__row
+                          span.form-page__caption E-mail:
+                          .form-page__wrap-field
+                            input.form-page__field(type="email" name="")
+                            
+                      .form-page__block
+                        .form-page__row-title
+                          h3.form-page__title Почтовый адрес
+                          
+                        label.form-page__row.form-page__row--sm
+                          span.form-page__caption Индекс<span>*</span>:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="index")
+                            
+                        label.form-page__row
+                          span.form-page__caption Город<span>*</span>:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="city")
+                            
+                        label.form-page__row
+                          span.form-page__caption Район<span>*</span>:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="district")
+                            
+                        label.form-page__row
+                          span.form-page__caption Улица<span>*</span>:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="street")
+                            
+                        label.form-page__row.form-page__row--sm
+                          span.form-page__caption Дом/корпус<span>*</span>:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="house")
+                            
+                        label.form-page__row.form-page__row--sm
+                          span.form-page__caption Квартира:
+                          .form-page__wrap-field
+                            input.form-page__field(type="text" name="")
+                            
+                      .form-page__block
+                        label.form-page__row.form-page__row--no-flex
+                          h3.form-page__title Текст вашего обращения<span>*</span>
+                          textarea.form-page__textarea(name="appeal")
+                          
+                      .form-page__block
+                        .form-page__flex
+                          h3.form-page__title Прикрепить файл<span>**</span>                          
+                          div.form-page__download.my-modal__block-file--red
+                            label.form-page__label
+                              input.form-page__file.my-modal__file--three(type="file" multiple)
+                              .header-btn
+                                span.header-btn__text Загрузить файлы
+                                svg.header-btn__svg
+                                  use(xlink:href="img/sprite.svg#download")
+                        //input.form-page__file-text.my-modal__file-text--red(type="text" class="filename" id="filename-three" placeholder="Загрузите копию документа" disabled)
+                        div(class="filename")
+                        .form-page__down
+                          span.form-page__text Все поля c пометкой * обязательны для заполнения!
+                          .form-page__wrap-btn
+                            button.header-btn(type="submit")
+                              span.header-btn__text Отправить
+                            .header-btn
+                              span.header-btn__text Очистить
+                        
+                  .col-lg-8      
+                    .document-inner
+                      .document-inner__area
+                        p ** - Гарантированная передача файла(ов) вложения на почтовый сервер зависит от пропускной способности сети «Интернет» пользователя, а получение – от объёма обрабатываемых почтовым сервером переданных файлов.
+                        p <b>При подключении оборудования пользователя к сети «Интернет» по выделенным каналам связи с использованием технологий ADSL, 3G, 4G, WiFi и иных технологий, обеспечивающих аналогичные скорости передачи данных в сети «Интернет», передача и обработка файла(ов) с суммарным размером:</b>
+                        ul
+                          li до 5 Мб осуществляется, как правило, без задержки во времени;
+                          li от 5 Мб до 10 Мб может осуществляться с задержкой во времени;
+                          li свыше 10 Мб может быть не осуществлена.
+                        p Вложения документов и материалов, которые не удается отправить (передать и обработать), рекомендуется направлять в соответствии с ч. 3 ст. 7 Федерального закона от 2 мая 2006 года № 59-ФЗ «О порядке рассмотрения обращений граждан Российской Федерации» почтовой связью, сообщив об этом в тексте обращения в форме электронного документа.
+                        p Если в направленном Вами тексте в форме электронного документа, содержащемся в поле ввода текста обращения в форме электронного документа, не изложено предложение, заявление или жалоба, а только ссылка на приложение (файл вложение) либо на контент интернет-сайта, то в ответе разъясняется порядок его рассмотрения, установленный Федеральным законом от 2 мая 2006 года № 59 «О порядке рассмотрения обращений граждан Российской Федерации».
+                        p <b>Допустимы следующие форматы файлов: txt, doc, docx, rtf, xls, xlsx, pps, ppt, pdf, jpg, bmp, png, tif, pcx.</b>
+                  
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                    
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

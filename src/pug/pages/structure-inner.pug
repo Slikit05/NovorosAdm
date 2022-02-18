@@ -1,0 +1,200 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Органы власти  
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Администрация     
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Структура администрации
+      section.inner-wrap
+        .container
+          .row
+            .col-lg-8.col-xl-9
+              .structure-inner
+                .row
+                  .col-xl-12
+                    .structure-inner__section
+                      .structure-inner__up
+                        .structure-inner__wrap-img
+                          img.structure-inner__img(src="img/structure-img1.jpg")
+                        .structure-inner__block-text
+                          h3.structure-inner__name Дяченко Игорь Алексеевич
+                          span.structure-inner__position Глава муниципального образования город Новороссийск
+                      .structure-inner__wrapper
+                        p Родился 5 мая 1955 года.
+                        p Образование высшее. В 1988 году окончил Ростовскую высшую партийную школу по специальности «партийное и советское строительство», квалификация «преподаватель научного коммунизма».
+                        p В 1977 году — Кубанский сельскохозяйственный институт по специальности «агрономия», квалификация «ученый агроном».
+                        p С июня 1980 по апрель 1982 года работал инспектором Прикубанского районного комитета народного контроля города Краснодара.
+                        p C 1982 по 1985 был инструктором организационного отдела в Прикубанском райкоме КПСС. С января 1985 по сентябрь 1986 — секретарь парткома совхоза «Калининский».
+                        p С 1988 по 1990 год работал инструктором орготдела, заворготделом в Прикубанском райкоме КПСС города Краснодара.
+                        p С 1990 по 1991 год- секретарь парткома совхоза «Краснодарский».
+                        p С марта 1997 года работал управляющим делами, заместителем главы администрации Западного округа города Краснодара.
+                        p С марта 2010 года назначен на должность начальника управления по социальным вопросам администрации муниципального образования город Краснодар.
+                      .structure-inner__down
+                        .inner-nav__prev
+                          .block-btn
+                            button.block-btn__btn
+                              .block-btn__wrap
+                                svg.block-btn__svg
+                                  use(xlink:href="img/sprite.svg#arrow-right")
+                              span.block-btn__text Назад к списку                                
+                                  
+                    .structure__down
+                      .title-row
+                        h2.title Курируемые подразделения
+                      .link-block
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Приморский район
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Южный район
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Восточный район
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Новороссийский район
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                        .link-block__row
+                          a.link-row(href="#")
+                            span.link-row__text Центральный район
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                                  
+            .col-lg-4.col-xl-3
+              .sidebar-right
+                .contacts-block
+                  h2.title Контакты
+                  .contacts-block__wrap
+                    .contacts-block__row
+                      .contacts-block__wrap-svg
+                        svg.contacts-block__svg
+                          use(xlink:href="img/sprite.svg#tel")
+                      a.contacts-block__tel(href="tel:") 8 (8617) 64-61-98
+                    .contacts-block__row
+                      .contacts-block__wrap-svg
+                        svg.contacts-block__svg
+                          use(xlink:href="img/sprite.svg#mail-sm")
+                      a.contacts-block__mail(href="mailto:") glava@mo-novorossiysk.ru
+                  p.contacts-block__text Запись на прием производится по предварительной записи в отделе обращений юридических и физических лиц ул. Советов, 18 (вход с левого  торца здания). Прием граждан: пнд, птн 14.00-18.00, вт, ср, чтв 09.00 -13.00  Время начала приемов – 09.00
+                  p.contacts-block__text Запись производится по паспорту, при себе иметь документы, способствующие рассмотрению обращения.
+                    
+                      
+                    
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                                
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

@@ -1,0 +1,146 @@
+.history {
+  &__wrapper {
+    padding-top: 36px;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 78px;
+      bottom: 0;
+      width: 1px;
+      background-color: #DEDEE0;
+    }
+  }
+}
+
+.history-post {
+  margin-bottom: 63px;
+
+  &:nth-child(2n) {
+    padding-top: 80px;
+    margin-bottom: -57px;
+
+    .history-post {
+      &__row-title {
+        justify-content: flex-end;
+        margin: 0 0 14px -15px;
+        padding: 0 0 19px 22px;
+        order: 1;
+        &::before {
+          left: 0;
+          right: auto;
+        }
+      }
+
+
+      &__name {
+        text-align: left;
+      }
+
+      &__wrap-img {
+        order: 2;
+        padding-left: 9px;
+      }
+
+      &__block-text {
+        order: 3;
+        text-align: left;
+      }
+
+      &__img {
+        order: 2;
+        margin-right: 0;
+        margin-left: 27px;
+      }
+
+      &__description {
+        order: 1;
+        text-align: right;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__row-title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 -15px 14px 0;
+    padding: 0 0 19px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -15px;
+      bottom: 0;
+      width: 42%;
+      background-color: #DEDEE0;
+      height: 1px;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: right;
+    max-width: 65%;
+    width: 100%;
+    letter-spacing: -0.4px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: #053391;
+    }
+  }
+
+  &__block-text {
+    max-width: 65%;
+    text-align: right;
+
+    p {
+      font-size: 15px;
+      line-height: 24px;
+      font-family: 'Arial', sans-serif;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  &__wrap-img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0 0 30px;
+    max-width: 35%;
+    width: 100%;
+  }
+
+  &__img {
+    max-width: 80px;
+    width: 100%;
+    margin-right: 33px;
+    margin-top: 4px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    max-width: 75px;
+    width: 100%;
+    display: block;
+  }
+}

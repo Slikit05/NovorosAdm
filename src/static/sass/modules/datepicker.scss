@@ -1,0 +1,117 @@
+body {
+  .ui-datepicker {
+    width: auto;
+    border: none;
+    max-height: inherit !important;
+    border: 1px solid #c5c5c5 !important;
+
+    thead {
+      display: none;
+    }
+
+    td {
+      padding: 0 4px 8px;
+
+      a,
+      span {
+        padding: 8px;
+        font-size: 14px;
+        line-height: normal;
+        font-weight: 500 !important;
+        text-align: center;
+      }
+    }
+  }
+
+  .ui-widget-header {
+    background-color: transparent;
+    border: none;
+
+    .ui-state-hover {
+      background-color: transparent;
+      border: none;
+      right: 7px;
+    }
+  }
+
+  .ui-state-default {
+    background-color: transparent !important;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    line-height: normal;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+
+    &:hover {
+      font-weight: 700 !important;
+    }
+  }
+
+  span.ui-state-default {
+    border-color: transparent !important;
+  }
+
+  .ui-datepicker-title {
+    span {
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 700;
+    }
+  }
+
+  .ui-state-highlight {
+    border-color: #c5c5c5 !important;
+    font-weight: 500;
+    background-color: #053391 !important;
+    color: #fff !important;
+  }
+
+  .ui-state-active {
+    background-color: #053391 !important;
+    color: #fff !important;
+    font-weight: 500;
+  }
+
+  .ui-datepicker-today {
+    .ui-state-active,
+    .ui-state-highlight {
+      background-color: #FAFAFA !important;
+      color: #454545 !important;
+      font-weight: 700 !important;
+    }
+  }
+
+  .ui-widget-header {
+    margin-bottom: 19px;
+  }
+
+  .ui-datepicker .ui-datepicker-next,
+  .ui-datepicker .ui-datepicker-prev {
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    cursor: pointer;
+  }
+
+  .ui-datepicker .ui-datepicker-next {
+    right: 15px;
+  }
+
+  .ui-datepicker .ui-datepicker-prev {
+    transform: rotate(180deg);
+    left: 15px;
+  }
+
+  .ui-widget-header .ui-icon {
+    background-image: url(../img/arrow-right-sm.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    background-position: center;
+  }
+}

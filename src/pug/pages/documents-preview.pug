@@ -1,0 +1,380 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Документы  
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Документы администрации
+      section.inner-wrap
+        .container
+          .row
+            .col-lg-4.col-xl-3
+              .sidebar
+                .sidebar__row
+                  .categories
+                    .categories__row.categories__row--active
+                      .categories__wrap
+                        span.categories__text Общие документы
+                        .categories__wrap-svg
+                          svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                    .categories__wrapper
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Конкурс по осуществлению регулярных пассажирских перевозок
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Открытый конкурс на право осуществления перевозок по муниципальным маршрутам регулярных перевозок в муниципальном образовании город Новороссийск по нерегулируемым тарифам
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Конкурс на право заключения инвестиционного соглашения (парковочное пространство)
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Нормативные правовые акты
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Публичные слушания
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Аукционы, конкурсы
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Отчёты об основных итогах экономического и социального развития
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Закупки за счет добровольных пожертвований, благотворительной помощи
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Капитальный ремонт МКД
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Отбор управляющих организаций
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Публичное обсуждение проектов муниципальных программ
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                              
+            .col-lg-8.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    h2.inner-row-title__title Общие документы
+              .form-row.form-row--change
+                .form-row__up
+                  h2.title Поиск документа
+                form.form-row__form
+                  .form-row__wrapper
+                    label.form-row__block
+                      span.form-row__description Поиск по содержанию:
+                      input.form-row__field(type="text" name="key" placeholder="Ключевое слово или фраза")
+                    .form-row__block
+                      span.form-row__description Тип документа:
+                      .form-row__wrap-select
+                        select.form-row__select
+                          option Все
+                          option(value="Решение") Решение
+                          option(value="Стандарт") Стандарт
+                          option(value="Устав") Устав
+                    .form-row__block
+                      span.form-row__description Дата от:
+                      .form-row__wrap
+                      
+                        .form-row__wrap-field.form-row__wrap-field--date
+                          input.form-row__date-field(type="text" name="from" id="fromField" placeholder="ДД.ММ.ГГГГ")
+                          .form-row__svg-wrap.form-row__svg-wrap--date(id="from")
+                            svg
+                              use(xlink:href="img/sprite.svg#periods")
+                              
+                        .form-row__wrap-field.form-row__wrap-field--date
+                          input.form-row__date-field(type="text" name="before" id="beforeField" placeholder="ДД.ММ.ГГГГ")
+                          .form-row__svg-wrap.form-row__svg-wrap--date(id="before")
+                            svg
+                              use(xlink:href="img/sprite.svg#periods")      
+                        //.form-row__wrap-field
+                          input.form-row__date-field(type="text" name="from" id="from" placeholder="ДД.ММ.ГГГГ")
+                          .form-row__svg-wrap
+                            svg
+                              use(xlink:href="img/sprite.svg#periods")
+                        //.form-row__wrap-field
+                          input.form-row__date-field(type="text" name="before" id="before" placeholder="ДД.ММ.ГГГГ")
+                          .form-row__svg-wrap
+                            svg
+                              use(xlink:href="img/sprite.svg#periods")
+                              
+                    .form-row__down
+                      .header-btn
+                        span.header-btn__text Найти документы
+                        svg.header-btn__svg
+                          use(xlink:href="img/sprite.svg#search")
+              .block-documents
+                .row-document
+                  a(href="")
+                    h4.row-document__caption Сводная ведомость результатов проведения специальной оценки условий труда (2018 год)
+                  .row-document__flex
+                    a.post-news__categories(href="#") Решение
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption Реестр муниципального имущества
+                  .row-document__flex
+                    a.post-news__categories(href="#") Стандарт
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption Реестр муниципального имущества
+                  .row-document__flex
+                    a.post-news__categories(href="#") Сведения
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption Устав МО г. Новороссийск в редакции 2017 года
+                  .row-document__flex
+                    a.post-news__categories(href="#") Устав
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption Результаты проведения специальной оценки условий труда рабочих мест в администрации муниципального образования город Новороссийск
+                  .row-document__flex
+                    a.post-news__categories(href="#") Решение
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption УСТАВ МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ГОРОД НОВОРОССИЙСК
+                  .row-document__flex
+                    a.post-news__categories(href="#") Устав
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption РЕШЕНИЕ ГОРОДСКОЙ ДУМЫ МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ ГОРОД НОВОРОССИЙСК от 19 апреля 2016 года №75 г. Новороссийск "О принятии Устава муниципального образования город Новороссийск"
+                  .row-document__flex
+                    a.post-news__categories(href="#") Устав
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption Результаты проведения специальной оценки условий труда рабочих мест в администрации муниципального образования город Новороссийск
+                  .row-document__flex
+                    a.post-news__categories(href="#") Распоряжение
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption Распоряжение №1840-р от 06.10.2015г. О подготовке документации по планировке территории объекта " Расходы на мероприятия по повышению уровня обустройства автомобильных дорог федерального значения. Устройства искусственного электроосвещения на автомобильные дороги А-200 Новороссийск - Керчеснский пролив - граница с Украиной на участках км 13+000 - км 13+500, км 23+600 - км 23+800, км 24+500 - км 24+800, км 30+500 - 30+800, км 31+500 - км 31+800, км 52+800 - км 54+900, км 55+400 - км 55+600, км 58+200 - км 59+000, км 61+500 - км 62+000, км 92+750 - км 93+250, км 108+200 - км 108+450, км 109+850 - км 110+350, км 114+900 - км 115+500, км 128+450 - км 128+550, км 144+750 - км 145+200, Краснодарский край"
+                  .row-document__flex
+                    a.post-news__categories(href="#") Распоряжение
+                    span.date-news 31 Января 2019 (09:39)
+                .row-document
+                  a(href="")
+                    h4.row-document__caption ПОЛОЖЕНИЕ об организации работы в области охраны труда
+                  .row-document__flex
+                    a.post-news__categories(href="#") Стандарт
+                    span.date-news 31 Января 2019 (09:39)
+                    
+              .inner-nav
+                .inner-nav__wrapper
+                  .inner-nav__left-block
+                    .inner-nav__block
+                    
+                      .inner-nav__prev
+                        .block-btn
+                          button.block-btn__btn
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                            span.block-btn__text Предыдущая
+                            
+                      input.inner-nav__number(type="text" placeholder="1")
+                      
+                      .inner-nav__next
+                        .block-btn
+                          button.block-btn__btn                            
+                            span.block-btn__text Следующая
+                            .block-btn__wrap
+                              svg.block-btn__svg
+                                use(xlink:href="img/sprite.svg#arrow-right")
+                                
+                      span.inner-nav__text из 540
+                    input.inner-nav__field(type="text" placeholder="Введите интересующую Вас страницу")
+            .col-xl-12
+              .document-inner__wrapper.document-inner__wrapper--change
+                .document-inner__row
+                  a.link-doc(href="#")
+                    .link-doc__wrap
+                      svg.link-doc__svg
+                        use(xlink:href="img/sprite.svg#icon-doc")
+                      span.link-doc__text .docx
+                    .link-doc__block-text
+                      h3.link-doc__name Распоряжение администрации муниципального образования город Новороссийск от 20.11.2015 г. № 212-од
+                      .link-doc__row
+                        span.date-news 31 Января 2019 (09:39)
+                        .link-doc__wrap-text
+                          span.link-doc__value Размер: <span>605 KB</span>
+                .document-inner__row          
+                  a.link-doc(href="#")
+                    .link-doc__wrap
+                      svg.link-doc__svg
+                        use(xlink:href="img/sprite.svg#icon-doc")
+                      span.link-doc__text .xls
+                    .link-doc__block-text
+                      h3.link-doc__name Сводная ведомость результатов проведения специальной оценки условий труда (2018 год)
+                      .link-doc__row
+                        span.date-news 31 Января 2019 (09:39)
+                        .link-doc__wrap-text
+                          span.link-doc__value Размер: <span>120 KB</span>
+                .document-inner__row        
+                  a.link-doc(href="#")
+                    .link-doc__wrap
+                      svg.link-doc__svg
+                        use(xlink:href="img/sprite.svg#icon-doc")
+                      span.link-doc__text .pdf
+                    .link-doc__block-text
+                      h3.link-doc__name Федеральный закон от 28.12.2013 N 426-ФЗ "О специальной оценке условий труда"
+                      .link-doc__row
+                        span.date-news 31 Января 2019 (09:39)
+                        .link-doc__wrap-text
+                          span.link-doc__value Размер: <span>1,2 MB</span>
+                .document-inner__row        
+                  a.link-doc(href="#")
+                    .link-doc__wrap
+                      svg.link-doc__svg
+                        use(xlink:href="img/sprite.svg#icon-doc")
+                      span.link-doc__text .zip
+                    .link-doc__block-text
+                      h3.link-doc__name Cпециальная оценка условий труда (2018 год)
+                      .link-doc__row
+                        span.date-news 31 Января 2019 (09:39)
+                        .link-doc__wrap-text
+                          span.link-doc__value Размер: <span>480 KB</span>
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                                
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

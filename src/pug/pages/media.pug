@@ -1,0 +1,385 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Подразделения  
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Управления    
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Управление торговли и потребительского рынка
+      section.inner-wrap.control-inner
+        .container
+          .row
+            .col-lg-4.col-xl-3
+              .sidebar
+                .sidebar__row
+                  .categories
+                    .categories__row.categories__row--active.categories__row--mob
+                      .categories__wrap
+                        span.categories__text Управление торговли и потребительского рынка
+                        .categories__wrap-svg
+                          svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                    .categories__wrapper
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Новости
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text О подразделении
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Структура подразделения
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text График работы подразделения
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Контактная информация
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Нормативно-правовая база
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Нормативно-правовые акты
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Регламенты на предоставление муниципальных услуг
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Конкурсы по предоставлению права на размещение НТО
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Размещение нестационарных торговых объектов на территории муниципального образования город Новороссийск
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Телефоны «горячей линии»
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Ярмарка
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Муниципальный контроль
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Брендирование
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")        
+            .col-lg-8.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    h2.inner-row-title__title Медиа-альбом
+              .row
+                .col-xl-12
+                  .media
+                    .media__container
+                      .row
+                        .col-xl-12
+                          .media__row(class="nav nav-tabs" id="nav-tab" role="tablist")
+                            a.media__tabs.active(id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true") фото
+                            a.media__tabs(id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false") видео
+                      .media__wrapper(class="tab-content" id="nav-tabContent")    
+                        .media__content(class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab")  
+                          .row
+                            .col-xl-12
+                              .media__container          
+                                .row
+                                
+                                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                                    a.post-news(href="#").post-news--change
+                                      .post-news__flex
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line 34 фото
+                                          picture
+                                            source(srcset="img/media-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/media-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption День молодежи (фотограф Наталья - Герасимова)
+                                          span.date-news 31 Января 2019 (09:39)
+                                          
+                                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                                    a.post-news(href="#").post-news--change
+                                      .post-news__flex
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line 34 фото
+                                          picture
+                                            source(srcset="img/media-img2.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/media-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption День семьи, любви и верности (фотограф Наталья - Герасимова)
+                                          span.date-news 31 Января 2019 (09:39)
+                                          
+                                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                                    a.post-news(href="#").post-news--change
+                                      .post-news__flex
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line 34 фото
+                                          picture
+                                            source(srcset="img/media-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/media-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption День молодежи (фотограф Наталья - Герасимова)
+                                          span.date-news 31 Января 2019 (09:39)
+                                          
+                                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                                    a.post-news(href="#").post-news--change
+                                      .post-news__flex
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg
+                                              use(xlink:href="img/sprite.svg#arrow-news")
+                                          span.post-news__yellow-line 34 фото
+                                          picture
+                                            source(srcset="img/media-img2.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/media-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption День семьи, любви и верности (фотограф Наталья - Герасимова)
+                                          span.date-news 31 Января 2019 (09:39)
+                                          
+                                          
+                        .media__content(class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab")  
+                          .row
+                            .col-xl-12
+                              .media__container          
+                                .row
+                                
+                                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                                    a.post-news(href="#").post-news--change
+                                      .post-news__flex
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg.arrow-square__svg--play
+                                              use(xlink:href="img/sprite.svg#play-two")
+                                          span.post-news__yellow-line 34 фото
+                                          picture
+                                            source(srcset="img/media-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/media-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption День молодежи (фотограф Наталья - Герасимова)
+                                          span.date-news 31 Января 2019 (09:39)
+                                          
+                                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                                    a.post-news(href="#").post-news--change
+                                      .post-news__flex
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg.arrow-square__svg--play
+                                              use(xlink:href="img/sprite.svg#play-two")
+                                          span.post-news__yellow-line 34 фото
+                                          picture
+                                            source(srcset="img/media-img2.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/media-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption День семьи, любви и верности (фотограф Наталья - Герасимова)
+                                          span.date-news 31 Января 2019 (09:39)
+                                          
+                                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                                    a.post-news(href="#").post-news--change
+                                      .post-news__flex
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg.arrow-square__svg--play
+                                              use(xlink:href="img/sprite.svg#play-two")
+                                          span.post-news__yellow-line 34 фото
+                                          picture
+                                            source(srcset="img/media-img1.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/media-img1.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption День молодежи (фотограф Наталья - Герасимова)
+                                          span.date-news 31 Января 2019 (09:39)
+                                          
+                                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                                    a.post-news(href="#").post-news--change
+                                      .post-news__flex
+                                        .post-news__up
+                                          .arrow-square
+                                            svg.arrow-square__svg.arrow-square__svg--play
+                                              use(xlink:href="img/sprite.svg#play-two")
+                                          span.post-news__yellow-line 34 фото
+                                          picture
+                                            source(srcset="img/media-img2.jpg" media="(max-width: 575px)")
+                                            img.post-news__img(src="img/media-img2.jpg")
+                                        .post-news__block-text
+                                          h4.post-news__caption День семьи, любви и верности (фотограф Наталья - Герасимова)
+                                          span.date-news 31 Января 2019 (09:39)
+                                          
+                  .inner-nav
+                    .inner-nav__wrapper
+                      .inner-nav__left-block
+                        .inner-nav__block
+
+                          .inner-nav__prev
+                            .block-btn
+                              button.block-btn__btn
+                                .block-btn__wrap
+                                  svg.block-btn__svg
+                                    use(xlink:href="img/sprite.svg#arrow-right")
+                                span.block-btn__text Предыдущая
+
+                          input.inner-nav__number(type="text" placeholder="1")
+
+                          .inner-nav__next
+                            .block-btn
+                              button.block-btn__btn                            
+                                span.block-btn__text Следующая
+                                .block-btn__wrap
+                                  svg.block-btn__svg
+                                    use(xlink:href="img/sprite.svg#arrow-right")
+
+                          span.inner-nav__text из 540
+                        input.inner-nav__field(type="text" placeholder="Введите интересующую Вас страницу")                        
+                                                 
+                  
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                                
+        
+      
+    footer
+      include includes/footer.pug
+      
+                     
+                   
+    include includes/script.pug

@@ -1,0 +1,734 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Администрация и Дума города Новороссийска
+    
+    include includes/link.pug
+    
+  body
+    header
+      include includes/header.pug
+    main
+      section.breadcrumbs.bg-gray
+        .container
+          .row
+            .col-xl-12
+              ul.breadcrumbs__list.border-none
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Главная
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="#") Подразделения  
+                li.breadcrumbs__item
+                  span.breadcrumbs__link.breadcrumbs__link--active Управления
+      section.inner-wrap.bg-gray
+        .container
+          .row
+            .col-lg-4.col-xl-3
+              .sidebar
+                .sidebar__row
+                  .categories
+                    .categories__row.categories__row--active
+                      .categories__wrap
+                        span.categories__text Управления
+                        .categories__wrap-svg
+                          svg
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                    .categories__wrapper        
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Отделы
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Муниципальные бюджетные и унитарные учреждения
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+                      .categories__row
+                        a.categories__wrap(href="#")
+                          span.categories__text Внутригородские районы
+                          .categories__wrap-svg
+                            svg
+                              use(xlink:href="img/sprite.svg#arrow-right")
+            .col-lg-8.col-xl-9
+              .inner-row-title
+                .row
+                  .col-xl-12
+                    h2.inner-row-title__title Управления
+              .control
+                .row
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление финансового контроля
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block
+                              a.block-connection__tel(href="tel:+78617611919") +7&nbsp;(8617)&nbsp;61-19-19
+                          a.block-connection__link(href="mailto:fbu@nross.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text otdel_vfa@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Финансовое управление
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646140") +7&nbsp;(8617)&nbsp;64-61-40; 
+                              span.block-connection__tel +7&nbsp;(8617)&nbsp;64-67-76 
+                              span.block-connection__gray-text (Факс)
+                          a.block-connection__link(href="mailto:fbu@nross.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text fbu@nross.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление экономического развития
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646077") +7&nbsp;(8617)&nbsp;64-60-77;
+                              a.block-connection__tel(href="tel:+78617641932") +7&nbsp;(8617)&nbsp;64-19-32;
+                              a.block-connection__tel(href="tel:+78617646221") +7&nbsp;(8617)&nbsp;64-62-21
+                          a.block-connection__link(href="mailto:otdel_vfa@mail.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text otdel_vfa@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление муниципального заказа
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617613662") +7&nbsp;(8617)&nbsp;61–36–62
+                              span.block-connection__gray-text (начальник управления муниципального заказа)
+                          a.block-connection__link(href="mailto:umz@mo-novorossiysk.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text umz@mo-novorossiysk.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление муниципального контроля
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617677077") +7&nbsp;(8617)&nbsp;67-70-77
+                          a.block-connection__link(href="mailto:m-kontrol@mail.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text m-kontrol@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление контроля городского хозяйства (УКГХ)
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646140") +7&nbsp;(8617)&nbsp;64-61-40; 
+                              span.block-connection__tel +7&nbsp;(8617)&nbsp;64-67-76 
+                              span.block-connection__gray-text (Факс)
+                          a.block-connection__link(href="mailto:fbu@nross.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text fbu@nross.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление финансового контроля
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block
+                              a.block-connection__tel(href="tel:+78617611919") +7&nbsp;(8617)&nbsp;61-19-19
+                          a.block-connection__link(href="mailto:fbu@nross.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text otdel_vfa@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Финансовое управление
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646140") +7&nbsp;(8617)&nbsp;64-61-40; 
+                              span.block-connection__tel +7&nbsp;(8617)&nbsp;64-67-76 
+                              span.block-connection__gray-text (Факс)
+                          a.block-connection__link(href="mailto:fbu@nross.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text fbu@nross.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление экономического развития
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646077") +7&nbsp;(8617)&nbsp;64-60-77;
+                              a.block-connection__tel(href="tel:+78617641932") +7&nbsp;(8617)&nbsp;64-19-32;
+                              a.block-connection__tel(href="tel:+78617646221") +7&nbsp;(8617)&nbsp;64-62-21
+                          a.block-connection__link(href="mailto:otdel_vfa@mail.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text otdel_vfa@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление муниципального заказа
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617613662") +7&nbsp;(8617)&nbsp;61–36–62
+                              span.block-connection__gray-text (начальник управления муниципального заказа)
+                          a.block-connection__link(href="mailto:umz@mo-novorossiysk.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text umz@mo-novorossiysk.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление муниципального контроля
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617677077") +7&nbsp;(8617)&nbsp;67-70-77
+                          a.block-connection__link(href="mailto:m-kontrol@mail.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text m-kontrol@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление контроля городского хозяйства (УКГХ)
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646140") +7&nbsp;(8617)&nbsp;64-61-40; 
+                              span.block-connection__tel +7&nbsp;(8617)&nbsp;64-67-76 
+                              span.block-connection__gray-text (Факс)
+                          a.block-connection__link(href="mailto:fbu@nross.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text fbu@nross.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление финансового контроля
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block
+                              a.block-connection__tel(href="tel:+78617611919") +7&nbsp;(8617)&nbsp;61-19-19
+                          a.block-connection__link(href="mailto:fbu@nross.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text otdel_vfa@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Финансовое управление
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646140") +7&nbsp;(8617)&nbsp;64-61-40; 
+                              span.block-connection__tel +7&nbsp;(8617)&nbsp;64-67-76 
+                              span.block-connection__gray-text (Факс)
+                          a.block-connection__link(href="mailto:fbu@nross.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text fbu@nross.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление экономического развития
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646077") +7&nbsp;(8617)&nbsp;64-60-77;
+                              a.block-connection__tel(href="tel:+78617641932") +7&nbsp;(8617)&nbsp;64-19-32;
+                              a.block-connection__tel(href="tel:+78617646221") +7&nbsp;(8617)&nbsp;64-62-21
+                          a.block-connection__link(href="mailto:otdel_vfa@mail.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text otdel_vfa@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление муниципального заказа
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617613662") +7&nbsp;(8617)&nbsp;61–36–62
+                              span.block-connection__gray-text (начальник управления муниципального заказа)
+                          a.block-connection__link(href="mailto:umz@mo-novorossiysk.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text umz@mo-novorossiysk.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление муниципального контроля
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617677077") +7&nbsp;(8617)&nbsp;67-70-77
+                          a.block-connection__link(href="mailto:m-kontrol@mail.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text m-kontrol@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление контроля городского хозяйства (УКГХ)
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646140") +7&nbsp;(8617)&nbsp;64-61-40; 
+                              span.block-connection__tel +7&nbsp;(8617)&nbsp;64-67-76 
+                              span.block-connection__gray-text (Факс)
+                          a.block-connection__link(href="mailto:fbu@nross.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text fbu@nross.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление финансового контроля
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block
+                              a.block-connection__tel(href="tel:+78617611919") +7&nbsp;(8617)&nbsp;61-19-19
+                          a.block-connection__link(href="mailto:fbu@nross.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text otdel_vfa@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Финансовое управление
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646140") +7&nbsp;(8617)&nbsp;64-61-40; 
+                              span.block-connection__tel +7&nbsp;(8617)&nbsp;64-67-76 
+                              span.block-connection__gray-text (Факс)
+                          a.block-connection__link(href="mailto:fbu@nross.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text fbu@nross.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление экономического развития
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646077") +7&nbsp;(8617)&nbsp;64-60-77;
+                              a.block-connection__tel(href="tel:+78617641932") +7&nbsp;(8617)&nbsp;64-19-32;
+                              a.block-connection__tel(href="tel:+78617646221") +7&nbsp;(8617)&nbsp;64-62-21
+                          a.block-connection__link(href="mailto:otdel_vfa@mail.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text otdel_vfa@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление муниципального заказа
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617613662") +7&nbsp;(8617)&nbsp;61–36–62
+                              span.block-connection__gray-text (начальник управления муниципального заказа)
+                          a.block-connection__link(href="mailto:umz@mo-novorossiysk.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text umz@mo-novorossiysk.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление муниципального контроля
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617677077") +7&nbsp;(8617)&nbsp;67-70-77
+                          a.block-connection__link(href="mailto:m-kontrol@mail.ru")
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text m-kontrol@mail.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+
+                  .col-md-6.col-lg-6.col-xl-6.margin-botom
+                    .block-connection
+                      .block-connection__up
+                        .block-connection__wrap
+                          h5.block-connection__caption Управление контроля городского хозяйства (УКГХ)
+                          .block-connection__row
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--tel
+                                use(xlink:href="img/sprite.svg#tel")
+                            .block-connection__block    
+                              a.block-connection__tel(href="tel:+78617646140") +7&nbsp;(8617)&nbsp;64-61-40; 
+                              span.block-connection__tel +7&nbsp;(8617)&nbsp;64-67-76 
+                              span.block-connection__gray-text (Факс)
+                          a.block-connection__link(href="mailto:fbu@nross.ru") 
+                            .block-connection__wrap-svg
+                              svg.block-connection__svg.block-connection__svg--mail
+                                use(xlink:href="img/sprite.svg#mail-sm")
+                            span.block-connection__text fbu@nross.ru
+                      .block-connection__drop
+                        .block-connection__flex
+                          img.block-connection__img(src="img/block-connection-img.jpg")
+                          .block-connection__block-text
+                            span.block-connection__name Игнатенко Аркадий Владимирович
+                            span.block-connection__position Начальник управления
+                          
+                          
+            
+            
+                              
+      section.portal-slider.portal-slider--border
+        .container
+          .row
+            .col-xl-12
+              .portal-slider__container
+                .portal-slider__line.swiper-container
+                  .portal-slider__wrapper.swiper-wrapper
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Государственная дума РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem2.png")
+                              span.portal-slider__text duma.gov.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Конституционный Суд РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem3.png")
+                              span.portal-slider__text ksrf.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Администрация Краснодарского края
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem4.png")
+                              span.portal-slider__text admkrai.krasnodar.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title ГКУ КК «ГосЮрБюро Краснодарского края»
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem5.png")
+                              span.portal-slider__text gosurburo93.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                    .portal-slider__slide.swiper-slide
+                      a.portal-slider__wrap(href="#")
+                        .portal-slider__block-text
+                          h5.portal-slider__title Правительство РФ
+                          .portal-slider__row
+                            .portal-slider__block
+                              img.portal-slider__icon(src="img/emblem1.png")
+                              span.portal-slider__text goverment.ru
+                            svg.portal-slider__svg-arrow
+                              use(xlink:href="img/sprite.svg#arrow-right-sm")
+                .portal-slider__down
+                  .portal-slider__arrow.portal-slider__arrow--prev
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                  .portal-slider__arrow.portal-slider__arrow--next
+                    .portal-slider__wrap-svg
+                      svg
+                        use(xlink:href="img/sprite.svg#arrow-right")                        
+                    
+        
+      
+    footer
+      include includes/footer.pug
+      include includes/modal.pug
+
+      
+                     
+                   
+    include includes/script.pug
